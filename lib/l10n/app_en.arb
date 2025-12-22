@@ -1,0 +1,47 @@
+{
+  "@@locale": "en",
+  "onboardDescription": "All types of financial services",
+  "@onboardDescription": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction": "Savings, loans, investments, insurance and all financial services in one place.",
+  "@onboardIntroduction": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription2": "Ardcoin",
+  "@onboardDescription2": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction2": "Use actively and get more rewards. All services come with Ardcoin rewards.",
+  "@onboardIntroduction2": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription3": "Crypto Trading",
+  "@onboardDescription3": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction3": "International crypto trading through your financial app.",
+  "@onboardIntroduction3": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription4": "AI Financial Assistant",
+  "@onboardDescription4": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction4": "Artificial intelligence powered financial assistant.",
+  "@onboardIntroduction4": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription5": "Strong. Together",
+  "@onboardDescription5": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction5": "Stronger together.",
+  "@onboardIntroduction5": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "chooseLanguage": "Choose Language",
+  "@chooseLanguage": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  }
+}

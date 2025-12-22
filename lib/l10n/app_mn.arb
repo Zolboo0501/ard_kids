@@ -1,0 +1,47 @@
+{
+  "@@locale": "mn",
+  "onboardDescription": "Бүх төрлийн санхүүгийн үйлчилгээ",
+  "@onboardDescription": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction": "Хадгаламж, зээл, хөрөнгө оруулалт, даатгал зэрэг санхүүгийн бүх үйлчилгээг нэг дороос.",
+  "@onboardIntroduction": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription2": "Ардкойн",
+  "@onboardDescription2": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction2": "Идэвхтэй ашиглаж илүү их урамшуулал аваарай. Үйлчилгээ бүхэн ардкойны урамшуулалтай.",
+  "@onboardIntroduction2": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription3": "Крипто арилжаа",
+  "@onboardDescription3": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction3": "Олон улсын крипто арилжааг санхүүгийн аппликейшнаараа.",
+  "@onboardIntroduction3": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription4": "Хиймэл оюун ухаант санхүүгийн туслах",
+  "@onboardDescription4": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction4": "Хиймэл оюун ухаант санхүүгийн туслах",
+  "@onboardIntroduction4": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "onboardDescription5": "Хүчтэй.Хамтдаа",
+  "@onboardDescription5": {
+    "description": "Main title shown on the onboarding screen"
+  },
+  "onboardIntroduction5": "Хүчтэй.Хамтдаа",
+  "@onboardIntroduction5": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "chooseLanguage": "Хэл сонгоно уу",
+  "@chooseLanguage": {
+    "description": "Introductory text explaining the app's features on the onboarding screen"
+  }
+}
