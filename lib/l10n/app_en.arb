@@ -43,5 +43,45 @@
   "chooseLanguage": "Choose Language",
   "@chooseLanguage": {
     "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "headerTitleXyp": "Verify",
+  "@headerTitleXyp": {
+    "description": "Screen title for register header"
+  },
+  "titleXyp": "Verify your information with XUR system",
+  "@titleXyp": {
+    "description": "Screen title for register"
+  },
+  "descriptionXyp": "We will get your information from XUR system and verify it.",
+  "@descriptionXyp": {
+    "description": "Screen description for register"
+  },
+  "login": "Sign in",
+  "@login": {
+    "description": "Button text for login"
+  },
+  "register": "Sign up",
+  "@register": {
+    "description": "Button text for register"
+  },
+  "registerButton": "Verify",
+  "@registerButton": {
+    "description": "Button text for register"
+  },
+  "registerVerifyAlertTitle": "Are you sure get information?",
+  "@registerVerifyAlertTitle": {
+    "description": "Alert title for register"
+  },
+  "registerVerifyAlertSubtitle": "We get your information from Xyp system and verify it",
+  "@registerVerifyAlertSubtitle": {
+    "description": "Alert subtitle for register"
+  },
+  "registerVerifyAlertButtonTitle": "Sure",
+  "@registerVerifyAlertButtonTitle": {
+    "description": "Alert button title for register"
+  },
+  "registerVerifyAlertButtonTitle2": "Decline",
+  "@registerVerifyAlertButtonTitle2": {
+    "description": "Alert button 2 title for register"
   }
 }

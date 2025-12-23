@@ -1,4 +1,5 @@
-import 'package:ard_light/routes.dart';
+import 'package:ard_light/core/theme/app_themes.dart';
+import 'package:ard_light/core/routes.dart';
 import 'package:flutter/material.dart';
 import 'l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -27,6 +28,7 @@ class MyApp extends ConsumerWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       locale: locale,
+      theme: AppThemes.lightTheme,
       supportedLocales: const [Locale('en'), Locale('mn')],
       routerConfig: routes,
     );

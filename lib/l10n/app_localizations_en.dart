@@ -44,4 +44,36 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chooseLanguage => 'Choose Language';
+
+  @override
+  String get headerTitleXyp => 'Verify';
+
+  @override
+  String get titleXyp => 'Verify your information with XUR system';
+
+  @override
+  String get descriptionXyp =>
+      'We will get your information from XUR system and verify it.';
+
+  @override
+  String get login => 'Sign in';
+
+  @override
+  String get register => 'Sign up';
+
+  @override
+  String get registerButton => 'Verify';
+
+  @override
+  String get registerVerifyAlertTitle => 'Are you sure get information?';
+
+  @override
+  String get registerVerifyAlertSubtitle =>
+      'We get your information from Xyp system and verify it';
+
+  @override
+  String get registerVerifyAlertButtonTitle => 'Sure';
+
+  @override
+  String get registerVerifyAlertButtonTitle2 => 'Decline';
 }

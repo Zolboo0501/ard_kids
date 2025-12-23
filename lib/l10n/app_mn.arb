@@ -43,5 +43,45 @@
   "chooseLanguage": "Хэл сонгоно уу",
   "@chooseLanguage": {
     "description": "Introductory text explaining the app's features on the onboarding screen"
+  },
+  "headerTitleXyp": "Баталгаажуулалт хийх",
+  "@headerTitleXyp": {
+    "description": "Screen title for register header"
+  },
+  "titleXyp": "ХУР системээр баталгаажуулалт хийх",
+  "@titleXyp": {
+    "description": "Screen title for register"
+  },
+  "descriptionXyp": "Бидний таны мэдээллийг ХУР системээр авж баталгаажуулалт хийнэ.",
+  "@descriptionXyp": {
+    "description": "Screen description for register"
+  },
+  "login": "Нэвтрэх",
+  "@login": {
+    "description": "Button text for login"
+  },
+  "register": "Бүртгүүлэх",
+  "@register": {
+    "description": "Button text for register"
+  },
+  "registerButton": "Баталгаажуулалт хийх",
+  "@registerButton": {
+    "description": "Button text for register"
+  },
+  "registerVerifyAlertTitle": "Та баталгаажуулалт хийхдээ итгэлтэй байна уу",
+  "@registerVerifyAlertTitle": {
+    "description": "Alert title for register"
+  },
+  "registerVerifyAlertSubtitle": "Бидний таны мэдээллийг ХУР системээр авж баталгаажуулалт хийнэ.",
+  "@registerVerifyAlertSubtitle": {
+    "description": "Alert subtitle for register"
+  },
+  "registerVerifyAlertButtonTitle": "Зөвшөөрөх",
+  "@registerVerifyAlertButtonTitle": {
+    "description": "Alert button title for register"
+  },
+  "registerVerifyAlertButtonTitle2": "Татгалзах",
+  "@registerVerifyAlertButtonTitle2": {
+    "description": "Alert button 2 title for register"
   }
 }

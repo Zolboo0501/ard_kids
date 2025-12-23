@@ -1,10 +1,13 @@
+import 'package:ard_light/components/bottom_sheet.dart';
+import 'package:ard_light/components/button.dart';
 import 'package:ard_light/components/text_view.dart';
 import 'package:ard_light/components/touchable_opacity.dart';
+import 'package:ard_light/features/auth/presentation/widget/language_widget.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:ard_light/core/providers/language_provider.dart';
+import 'package:go_router/go_router.dart';
 
 class Onboard extends ConsumerStatefulWidget {
   Onboard({Key? key}) : super(key: key);
@@ -51,11 +54,16 @@ class _OnboardState extends ConsumerState<Onboard> {
     ];
 
     return Scaffold(
-      backgroundColor: Color(0xFFF5F5F5),
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: SafeArea(
         child: PageView.builder(
           controller: _pageController,
           itemCount: data.length,
+          onPageChanged: (int index) {
+            setState(() {
+              currentPage = index;
+            });
+          },
           itemBuilder: (context, index) {
             return (SizedBox(
               width: double.infinity,
@@ -88,8 +96,11 @@ class _OnboardState extends ConsumerState<Onboard> {
                           ),
                         ),
                       ),
-                      onTap: () {
-                        _showLanguageDialog(context, ref);
+                      onTap: () async {
+                        await CustomBottomSheet.show(
+                          context: context,
+                          child: LanguageWidget(),
+                        );
                       },
                     ),
                     Image.asset(
@@ -120,6 +131,58 @@ class _OnboardState extends ConsumerState<Onboard> {
                         ),
                       ),
                     ),
+                    const Spacer(),
+
+                    Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            for (int i = 0; i < data.length; i++) ...[
+                              Container(
+                                width: 18,
+                                height: 6,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: currentPage == i
+                                      ? Theme.of(context).colorScheme.onPrimary
+                                      : const Color(0xFFADADAD),
+                                ),
+                              ),
+                              if (i < data.length - 1) const SizedBox(width: 6),
+                            ],
+                          ],
+                        ),
+                        const SizedBox(height: 30),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Button(
+                                onTap: () {
+                                  GoRouter.of(context).push('/auth/signIn');
+                                },
+                                text: AppLocalizations.of(context)!.login,
+                                color: Theme.of(context).colorScheme.secondary,
+                                titleColor: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimary,
+                              ),
+                            ),
+                            SizedBox(width: 12),
+                            Expanded(
+                              child: Button(
+                                onTap: () {
+                                  GoRouter.of(context).push('/auth/signUp');
+                                },
+                                color: Theme.of(context).colorScheme.onPrimary,
+                                text: AppLocalizations.of(context)!.register,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
@@ -129,66 +192,4 @@ class _OnboardState extends ConsumerState<Onboard> {
       ),
     );
   }
-}
-
-void _showLanguageDialog(BuildContext context, WidgetRef ref) {
-  showModalBottomSheet(
-    context: context,
-
-    builder: (BuildContext dialogContext) {
-      return Padding(
-        padding: EdgeInsets.only(
-          left: 10,
-          right: 10,
-          bottom: MediaQuery.of(context).viewPadding.bottom + 20,
-          top: 10,
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Center(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(100)),
-
-                  color: const Color(0xFFADADAD),
-                ),
-                width: 72,
-                height: 6,
-              ),
-            ),
-            const SizedBox(height: 20),
-            Center(
-              child: TextView(
-                text: AppLocalizations.of(context)!.chooseLanguage,
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-              ),
-            ),
-            const SizedBox(height: 20),
-            ListTile(
-              title: const Text('Монгол'),
-              onTap: () {
-                ref
-                    .read(languageProvider.notifier)
-                    .setLanguage(const Locale('mn'));
-                Navigator.pop(dialogContext);
-              },
-              trailing: const Icon(Icons.chevron_right_outlined, size: 24),
-            ),
-            ListTile(
-              title: const Text('English'),
-              onTap: () {
-                ref
-                    .read(languageProvider.notifier)
-                    .setLanguage(const Locale('en'));
-                Navigator.pop(dialogContext);
-              },
-              trailing: const Icon(Icons.chevron_right_outlined, size: 24),
-            ),
-          ],
-        ),
-      );
-    },
-  );
 }

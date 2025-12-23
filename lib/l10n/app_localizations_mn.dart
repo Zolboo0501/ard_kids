@@ -43,4 +43,37 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get chooseLanguage => 'Хэл сонгоно уу';
+
+  @override
+  String get headerTitleXyp => 'Баталгаажуулалт хийх';
+
+  @override
+  String get titleXyp => 'ХУР системээр баталгаажуулалт хийх';
+
+  @override
+  String get descriptionXyp =>
+      'Бидний таны мэдээллийг ХУР системээр авж баталгаажуулалт хийнэ.';
+
+  @override
+  String get login => 'Нэвтрэх';
+
+  @override
+  String get register => 'Бүртгүүлэх';
+
+  @override
+  String get registerButton => 'Баталгаажуулалт хийх';
+
+  @override
+  String get registerVerifyAlertTitle =>
+      'Та баталгаажуулалт хийхдээ итгэлтэй байна уу';
+
+  @override
+  String get registerVerifyAlertSubtitle =>
+      'Бидний таны мэдээллийг ХУР системээр авж баталгаажуулалт хийнэ.';
+
+  @override
+  String get registerVerifyAlertButtonTitle => 'Зөвшөөрөх';
+
+  @override
+  String get registerVerifyAlertButtonTitle2 => 'Татгалзах';
 }

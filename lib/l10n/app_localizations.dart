@@ -163,6 +163,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Choose Language'**
   String get chooseLanguage;
+
+  /// Screen title for register header
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get headerTitleXyp;
+
+  /// Screen title for register
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your information with XUR system'**
+  String get titleXyp;
+
+  /// Screen description for register
+  ///
+  /// In en, this message translates to:
+  /// **'We will get your information from XUR system and verify it.'**
+  String get descriptionXyp;
+
+  /// Button text for login
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get login;
+
+  /// Button text for register
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up'**
+  String get register;
+
+  /// Button text for register
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get registerButton;
+
+  /// Alert title for register
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure get information?'**
+  String get registerVerifyAlertTitle;
+
+  /// Alert subtitle for register
+  ///
+  /// In en, this message translates to:
+  /// **'We get your information from Xyp system and verify it'**
+  String get registerVerifyAlertSubtitle;
+
+  /// Alert button title for register
+  ///
+  /// In en, this message translates to:
+  /// **'Sure'**
+  String get registerVerifyAlertButtonTitle;
+
+  /// Alert button 2 title for register
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get registerVerifyAlertButtonTitle2;
 }
 
 class _AppLocalizationsDelegate
