@@ -95,5 +95,17 @@
   "registerChildrenDescription": "Please select the child for customer registration",
   "@registerChildrenDescription": {
     "description": "Register children screen description for register"
+  },
+  "branch": "Branch",
+  "@branch": {
+    "description": "Question tab title"
+  },
+  "question": "Question",
+  "@question": {
+    "description": "Question tab title"
+  },
+  "seeLocation": "See location on map",
+  "@seeLocation": {
+    "description": "Button text for see location"
   }
 }

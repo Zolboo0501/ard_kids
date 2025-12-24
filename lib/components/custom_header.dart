@@ -23,7 +23,7 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   border: Border.all(
-                    color: Theme.of(context).colorScheme.onSecondary,
+                    color: Theme.of(context).colorScheme.onSurface,
                     width: 1,
                   ),
                 ),

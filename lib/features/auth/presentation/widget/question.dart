@@ -26,7 +26,7 @@ class Question extends StatelessWidget {
                 : Theme.of(context).colorScheme.primary,
             border: isHasBorder == true
                 ? Border.all(
-                    color: Theme.of(context).colorScheme.onSecondary,
+                    color: Theme.of(context).colorScheme.onSurface,
                     width: 1,
                   )
                 : null,

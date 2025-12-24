@@ -241,6 +241,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please select the child for customer registration'**
   String get registerChildrenDescription;
+
+  /// Question tab title
+  ///
+  /// In en, this message translates to:
+  /// **'Branch'**
+  String get branch;
+
+  /// Question tab title
+  ///
+  /// In en, this message translates to:
+  /// **'Question'**
+  String get question;
+
+  /// Button text for see location
+  ///
+  /// In en, this message translates to:
+  /// **'See location on map'**
+  String get seeLocation;
 }
 
 class _AppLocalizationsDelegate

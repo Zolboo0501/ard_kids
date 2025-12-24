@@ -28,7 +28,7 @@ class LanguageWidget extends ConsumerWidget {
           ),
           const SizedBox(height: 20),
           ListTile(
-            title: const Text('Монгол'),
+            title: const TextView(text: 'Монгол'),
             onTap: () {
               ref
                   .read(languageProvider.notifier)
@@ -38,7 +38,7 @@ class LanguageWidget extends ConsumerWidget {
             trailing: const Icon(Icons.chevron_right_outlined, size: 24),
           ),
           ListTile(
-            title: const Text('English'),
+            title: const TextView(text: 'English'),
             onTap: () {
               ref
                   .read(languageProvider.notifier)

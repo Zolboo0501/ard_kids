@@ -26,8 +26,8 @@ class _RegisterChildrenState extends State<RegisterChildren> {
       appBar: CustomHeader(
         isBack: true,
         rightWidgets: [
-          LanguageChange(isHasMarginRight: true, isHasBorder: true),
           Question(isHasMarginRight: true, isHasBorder: true),
+          LanguageChange(isHasMarginRight: true, isHasBorder: true),
         ],
       ),
       body: SafeArea(

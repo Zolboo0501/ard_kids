@@ -4,6 +4,7 @@ import 'package:ard_light/features/auth/presentation/screen/signIn.dart';
 import 'package:ard_light/features/auth/presentation/screen/signUp.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ard_light/features/auth/presentation/screen/onboard.dart';
+import 'package:ard_light/features/auth/presentation/screen/question.dart';
 
 class AuthRoutes {
   static GoRoute get routes => GoRoute(
@@ -20,6 +21,7 @@ class AuthRoutes {
         path: '/registerChildrenStep',
         builder: (context, state) => RegisterChildrenStep(),
       ),
+      GoRoute(path: '/question', builder: (context, state) => Question()),
     ],
   );
 }

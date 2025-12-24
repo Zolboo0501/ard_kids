@@ -95,5 +95,17 @@
   "registerChildrenHeaderTitle": "Хүүхэд бүртгэх",
   "@registerChildrenHeaderTitle": {
     "description": "Register children screen title for register"
+  },
+  "branch": "Салбарын мэдээлэл",
+  "@branch": {
+    "description": "Question tab title"
+  },
+  "question": "Түгээмэл асуулт",
+  "@question": {
+    "description": "Question tab title"
+  },
+  "seeLocation": "Газрын зургаас харах",
+  "@seeLocation": {
+    "description": "Button text for see location"
   }
 }

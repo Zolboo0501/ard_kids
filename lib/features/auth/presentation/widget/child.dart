@@ -17,7 +17,7 @@ class Child extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(24)),
-          border: Border.all(color: Theme.of(context).colorScheme.onSecondary),
+          border: Border.all(color: Theme.of(context).colorScheme.onSurface),
           color: Theme.of(context).colorScheme.secondary,
         ),
         child: ListTile(
@@ -27,7 +27,7 @@ class Child extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(
                 width: 1,
-                color: Theme.of(context).colorScheme.onSecondary,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
               borderRadius: BorderRadius.circular(100),
             ),

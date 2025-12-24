@@ -86,4 +86,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get registerChildrenDescription =>
       'Please select the child for customer registration';
+
+  @override
+  String get branch => 'Branch';
+
+  @override
+  String get question => 'Question';
+
+  @override
+  String get seeLocation => 'See location on map';
 }

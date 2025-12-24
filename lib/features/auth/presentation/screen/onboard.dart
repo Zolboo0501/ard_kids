@@ -2,6 +2,7 @@ import 'package:ard_light/components/button.dart';
 import 'package:ard_light/components/custom_header.dart';
 import 'package:ard_light/components/language_change.dart';
 import 'package:ard_light/components/text_view.dart';
+import 'package:ard_light/features/auth/presentation/widget/question.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -55,7 +56,10 @@ class _OnboardState extends ConsumerState<Onboard> {
       backgroundColor: Theme.of(context).colorScheme.primary,
       appBar: CustomHeader(
         title: "",
-        rightWidgets: [LanguageChange(isHasMarginRight: true)],
+        rightWidgets: [
+          Question(isHasMarginRight: true),
+          LanguageChange(isHasMarginRight: true),
+        ],
       ),
       body: SafeArea(
         child: PageView.builder(

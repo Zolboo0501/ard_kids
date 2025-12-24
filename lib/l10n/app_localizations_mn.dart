@@ -86,4 +86,13 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get registerChildrenDescription =>
       'Та харилцагчаар бүртгүүлэх хүүхдийг сонгоно уу';
+
+  @override
+  String get branch => 'Салбарын мэдээлэл';
+
+  @override
+  String get question => 'Түгээмэл асуулт';
+
+  @override
+  String get seeLocation => 'Газрын зургаас харах';
 }
