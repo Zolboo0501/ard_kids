@@ -107,5 +107,9 @@
   "seeLocation": "Газрын зургаас харах",
   "@seeLocation": {
     "description": "Button text for see location"
+  },
+  "buyPromotionalSet": "Багц худалдан авах",
+  "@buyPromotionalSet": {
+    "description": "Button text for buy promotional set"
   }
 }

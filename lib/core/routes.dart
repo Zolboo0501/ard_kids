@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter routes = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/auth/validateChild',
   routes: <RouteBase>[
     GoRoute(
       path: '/',

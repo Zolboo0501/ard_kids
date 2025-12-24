@@ -95,4 +95,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get seeLocation => 'Газрын зургаас харах';
+
+  @override
+  String get buyPromotionalSet => 'Багц худалдан авах';
 }

@@ -1,19 +1,23 @@
 import 'package:ard_light/components/Indicator_tab.dart';
 import 'package:ard_light/components/custom_header.dart';
 import 'package:ard_light/components/language_change.dart';
-import 'package:ard_light/features/auth/presentation/tab/promotional_set.dart';
-import 'package:ard_light/features/auth/presentation/tab/promotional_set2.dart';
+import 'package:ard_light/features/auth/presentation/tab/card_address.dart';
+import 'package:ard_light/features/auth/presentation/tab/child_login_username.dart';
+import 'package:ard_light/features/auth/presentation/tab/contract.dart';
+import 'package:ard_light/features/auth/presentation/tab/validate_info.dart';
+import 'package:ard_light/features/auth/presentation/tab/validate_mail.dart';
+import 'package:ard_light/features/auth/presentation/tab/validate_phone.dart';
 import 'package:ard_light/features/auth/presentation/widget/question.dart';
 import 'package:flutter/material.dart';
 
-class RegisterChildrenStep extends StatefulWidget {
-  RegisterChildrenStep({Key? key}) : super(key: key);
+class ValidateChildStep extends StatefulWidget {
+  ValidateChildStep({Key? key}) : super(key: key);
 
   @override
-  _RegisterChildrenStepState createState() => _RegisterChildrenStepState();
+  _ValidateChildStepState createState() => _ValidateChildStepState();
 }
 
-class _RegisterChildrenStepState extends State<RegisterChildrenStep>
+class _ValidateChildStepState extends State<ValidateChildStep>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   double _currentPage = 0.0;
@@ -21,7 +25,7 @@ class _RegisterChildrenStepState extends State<RegisterChildrenStep>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 6, vsync: this);
     _tabController.animation!.addListener(() {
       setState(() {
         _currentPage = _tabController.animation!.value;
@@ -39,11 +43,10 @@ class _RegisterChildrenStepState extends State<RegisterChildrenStep>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomHeader(
-        title: "",
         isBack: true,
         rightWidgets: [
-          Question(isHasMarginRight: true),
-          LanguageChange(isHasMarginRight: true),
+          Question(isHasMarginRight: true, isHasBorder: true),
+          LanguageChange(isHasMarginRight: true, isHasBorder: true),
         ],
       ),
       body: IndicatorTab(
@@ -51,7 +54,14 @@ class _RegisterChildrenStepState extends State<RegisterChildrenStep>
         tabController: _tabController,
         currentPage: _currentPage,
         isHideStep: true,
-        child: [PromotionalSet(), PromotionalSet2()],
+        child: [
+          ValidateMail(),
+          ValidatePhone(),
+          ValidateInfo(),
+          CardAddress(),
+          ChildLoginUsername(),
+          Contract(),
+        ],
       ),
     );
   }

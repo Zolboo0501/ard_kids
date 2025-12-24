@@ -3,14 +3,14 @@ import 'package:ard_light/components/text_view.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
-class PromotionalSet extends StatefulWidget {
-  PromotionalSet({Key? key}) : super(key: key);
+class PromotionalSet2 extends StatefulWidget {
+  PromotionalSet2({Key? key}) : super(key: key);
 
   @override
   _PromotionalSetState createState() => _PromotionalSetState();
 }
 
-class _PromotionalSetState extends State<PromotionalSet> {
+class _PromotionalSetState extends State<PromotionalSet2> {
   final List<dynamic> data = [
     'Хүүхдийн нэрийн данс',
     "Хүүхдийн хадгаламж",
@@ -43,7 +43,7 @@ class _PromotionalSetState extends State<PromotionalSet> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextView(
-                    text: "6-12 настай хүүхдийн багц",
+                    text: "13-18 настай хүүхдийн багц",
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
                   ),

@@ -95,4 +95,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get seeLocation => 'See location on map';
+
+  @override
+  String get buyPromotionalSet => 'Buy promotional set';
 }

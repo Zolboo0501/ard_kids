@@ -259,6 +259,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See location on map'**
   String get seeLocation;
+
+  /// Button text for buy promotional set
+  ///
+  /// In en, this message translates to:
+  /// **'Buy promotional set'**
+  String get buyPromotionalSet;
 }
 
 class _AppLocalizationsDelegate

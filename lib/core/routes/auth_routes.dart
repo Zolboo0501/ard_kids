@@ -2,6 +2,7 @@ import 'package:ard_light/features/auth/presentation/screen/register_children.da
 import 'package:ard_light/features/auth/presentation/screen/register_children_step.dart';
 import 'package:ard_light/features/auth/presentation/screen/signIn.dart';
 import 'package:ard_light/features/auth/presentation/screen/signUp.dart';
+import 'package:ard_light/features/auth/presentation/screen/validate_child_step.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ard_light/features/auth/presentation/screen/onboard.dart';
 import 'package:ard_light/features/auth/presentation/screen/question.dart';
@@ -22,6 +23,10 @@ class AuthRoutes {
         builder: (context, state) => RegisterChildrenStep(),
       ),
       GoRoute(path: '/question', builder: (context, state) => Question()),
+      GoRoute(
+        path: '/validateChild',
+        builder: (context, state) => ValidateChildStep(),
+      ),
     ],
   );
 }

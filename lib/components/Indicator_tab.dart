@@ -6,12 +6,14 @@ class IndicatorTab extends StatefulWidget {
   final List<Widget> child;
   final double currentPage;
   final EdgeInsets padding;
+  final bool isHideStep;
   const IndicatorTab({
     super.key,
     required this.child,
     required this.tabController,
     required this.currentPage,
     this.padding = const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+    this.isHideStep = false,
   });
 
   @override
@@ -56,20 +58,22 @@ class _IndicatorTabState extends State<IndicatorTab>
                 ),
                 const SizedBox(width: 12),
               ],
-              AnimatedBuilder(
-                animation: widget.tabController,
-                builder: (context, child) {
-                  return TextView(
-                    text:
-                        '${widget.tabController.index + 1}/${widget.child.length}',
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black,
-                  );
-                },
-              ),
+              if (!widget.isHideStep)
+                AnimatedBuilder(
+                  animation: widget.tabController,
+                  builder: (context, child) {
+                    return TextView(
+                      text:
+                          '${widget.tabController.index + 1}/${widget.child.length}',
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    );
+                  },
+                ),
             ],
           ),
+          const SizedBox(height: 10),
           Expanded(
             flex: 1,
             child: TabBarView(
