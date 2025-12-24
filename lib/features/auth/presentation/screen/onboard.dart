@@ -1,11 +1,9 @@
-import 'package:ard_light/components/bottom_sheet.dart';
 import 'package:ard_light/components/button.dart';
+import 'package:ard_light/components/custom_header.dart';
+import 'package:ard_light/components/language_change.dart';
 import 'package:ard_light/components/text_view.dart';
-import 'package:ard_light/components/touchable_opacity.dart';
-import 'package:ard_light/features/auth/presentation/widget/language_widget.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -55,6 +53,10 @@ class _OnboardState extends ConsumerState<Onboard> {
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.primary,
+      appBar: CustomHeader(
+        title: "",
+        rightWidgets: [LanguageChange(isHasMarginRight: true)],
+      ),
       body: SafeArea(
         child: PageView.builder(
           controller: _pageController,
@@ -77,32 +79,6 @@ class _OnboardState extends ConsumerState<Onboard> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TouchableOpacity(
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Container(
-                          width: 48,
-                          height: 48,
-                          padding: EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.white,
-                          ),
-                          child: SvgPicture.asset(
-                            'assets/icons/globe.svg',
-                            width: 24,
-                            height: 24,
-                            fit: BoxFit.contain,
-                          ),
-                        ),
-                      ),
-                      onTap: () async {
-                        await CustomBottomSheet.show(
-                          context: context,
-                          child: LanguageWidget(),
-                        );
-                      },
-                    ),
                     Image.asset(
                       data[index]['image'],
                       fit: BoxFit.cover,

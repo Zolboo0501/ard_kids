@@ -76,4 +76,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get registerVerifyAlertButtonTitle2 => 'Decline';
+
+  @override
+  String get registerChildrenHeaderTitle => 'Register Children';
+
+  @override
+  String get registerChildrenTitle => 'Information children';
+
+  @override
+  String get registerChildrenDescription =>
+      'Please select the child for customer registration';
 }

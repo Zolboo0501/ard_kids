@@ -223,6 +223,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Decline'**
   String get registerVerifyAlertButtonTitle2;
+
+  /// Register children screen title for register
+  ///
+  /// In en, this message translates to:
+  /// **'Register Children'**
+  String get registerChildrenHeaderTitle;
+
+  /// Register children screen title for register
+  ///
+  /// In en, this message translates to:
+  /// **'Information children'**
+  String get registerChildrenTitle;
+
+  /// Register children screen description for register
+  ///
+  /// In en, this message translates to:
+  /// **'Please select the child for customer registration'**
+  String get registerChildrenDescription;
 }
 
 class _AppLocalizationsDelegate

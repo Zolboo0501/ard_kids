@@ -76,4 +76,14 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get registerVerifyAlertButtonTitle2 => 'Татгалзах';
+
+  @override
+  String get registerChildrenHeaderTitle => 'Хүүхэд бүртгэх';
+
+  @override
+  String get registerChildrenTitle => 'Хүүхэд бүртгэх';
+
+  @override
+  String get registerChildrenDescription =>
+      'Та харилцагчаар бүртгүүлэх хүүхдийг сонгоно уу';
 }

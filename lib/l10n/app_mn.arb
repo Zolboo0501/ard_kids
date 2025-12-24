@@ -83,5 +83,17 @@
   "registerVerifyAlertButtonTitle2": "Татгалзах",
   "@registerVerifyAlertButtonTitle2": {
     "description": "Alert button 2 title for register"
+  },
+  "registerChildrenTitle": "Хүүхэд бүртгэх",
+  "@registerChildrenTitle": {
+    "description": "Register children screen title for register"
+  },
+  "registerChildrenDescription": "Та харилцагчаар бүртгүүлэх хүүхдийг сонгоно уу",
+  "@registerChildrenDescription": {
+    "description": "Register children screen description for register"
+  },
+  "registerChildrenHeaderTitle": "Хүүхэд бүртгэх",
+  "@registerChildrenHeaderTitle": {
+    "description": "Register children screen title for register"
   }
 }

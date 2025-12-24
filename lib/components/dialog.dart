@@ -174,14 +174,14 @@ class CustomDialogState extends State<CustomDialog> {
                     TextView(
                       text: widget.subtitle!,
                       fontWeight: FontWeight.w400,
-                      fontSize: 12,
+                      fontSize: 14,
                       textAlign: TextAlign.center,
                       color: Theme.of(context).colorScheme.onPrimary,
                     ),
                 ],
               ),
             ),
-            Divider(),
+            Divider(color: Theme.of(context).colorScheme.onSurface),
             if (widget.buttonView != null)
               widget.buttonView!
             else

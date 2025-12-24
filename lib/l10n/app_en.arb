@@ -83,5 +83,17 @@
   "registerVerifyAlertButtonTitle2": "Decline",
   "@registerVerifyAlertButtonTitle2": {
     "description": "Alert button 2 title for register"
+  },
+  "registerChildrenHeaderTitle": "Register Children",
+  "@registerChildrenHeaderTitle": {
+    "description": "Register children screen title for register"
+  },
+  "registerChildrenTitle": "Information children",
+  "@registerChildrenTitle": {
+    "description": "Register children screen title for register"
+  },
+  "registerChildrenDescription": "Please select the child for customer registration",
+  "@registerChildrenDescription": {
+    "description": "Register children screen description for register"
   }
 }

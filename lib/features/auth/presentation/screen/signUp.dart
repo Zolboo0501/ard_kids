@@ -65,6 +65,7 @@ class SignUp extends StatelessWidget {
                                 child: Button(
                                   onTap: () {
                                     Navigator.pop(context);
+                                    GoRouter.of(context).pop();
                                   },
                                   text: AppLocalizations.of(
                                     context,
@@ -84,7 +85,7 @@ class SignUp extends StatelessWidget {
                                     Navigator.pop(context);
                                     GoRouter.of(
                                       context,
-                                    ).push('/cart/credit_card_request');
+                                    ).push('/auth/registerChildren');
                                   },
                                   color: Theme.of(
                                     context,
