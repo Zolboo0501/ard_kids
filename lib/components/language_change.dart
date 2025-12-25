@@ -24,7 +24,7 @@ class LanguageChange extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
             color: isHasBorder == true
                 ? null
-                : Theme.of(context).colorScheme.primary,
+                : Theme.of(context).colorScheme.onPrimary,
             border: isHasBorder == true
                 ? Border.all(
                     color: Theme.of(context).colorScheme.onSurface,

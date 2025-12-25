@@ -12,7 +12,7 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: Theme.of(context).colorScheme.onPrimary,
       appBar: CustomHeader(
         title: AppLocalizations.of(context)!.headerTitleXyp,
         isBack: true,
@@ -38,7 +38,7 @@ class SignUp extends StatelessWidget {
                     text: AppLocalizations.of(context)!.titleXyp,
                     fontWeight: FontWeight.w600,
                     fontSize: 20,
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.primary,
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10),
@@ -100,7 +100,7 @@ class SignUp extends StatelessWidget {
                         ),
                       );
                     },
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.primary,
                     text: AppLocalizations.of(context)!.registerButton,
                   ),
                 ],

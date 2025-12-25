@@ -55,7 +55,7 @@ class TabRoundState extends State<TabRound>
               widget.tabDecoration ??
               BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
-                color: Theme.of(context).colorScheme.onPrimary,
+                color: Theme.of(context).colorScheme.primary,
               ),
           child: Row(
             children: [
@@ -84,7 +84,7 @@ class TabRoundState extends State<TabRound>
 
                         // Interpolate text color
                         Color textColor = Color.lerp(
-                          Theme.of(context).colorScheme.onPrimary,
+                          Theme.of(context).colorScheme.primary,
                           Colors.white,
                           opacity,
                         )!;

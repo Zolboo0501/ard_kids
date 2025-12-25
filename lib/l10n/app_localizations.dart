@@ -265,6 +265,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Buy promotional set'**
   String get buyPromotionalSet;
+
+  /// Screen title for validate mail
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the child’s email address.'**
+  String get validateMail;
+
+  /// Screen title for validate mail
+  ///
+  /// In en, this message translates to:
+  /// **'By entering the child’s email address, we will verify that address.'**
+  String get validateMailDescription;
+
+  /// Screen title for validate mail
+  ///
+  /// In en, this message translates to:
+  /// **'Child’s registered email address'**
+  String get validateMailInputLabel;
+
+  /// Screen title for validate mail
+  ///
+  /// In en, this message translates to:
+  /// **'Registered email address'**
+  String get validateMailInputHint;
+
+  /// Screen title for validate phone
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the child’s phone number.'**
+  String get validatePhone;
+
+  /// Screen title for validate phone
+  ///
+  /// In en, this message translates to:
+  /// **'By entering the child’s phone number, we will verify that number.'**
+  String get validatePhoneDescription;
+
+  /// Screen title for validate phone
+  ///
+  /// In en, this message translates to:
+  /// **'Child’s registered phone number'**
+  String get validatePhoneInputLabel;
+
+  /// Screen title for validate phone
+  ///
+  /// In en, this message translates to:
+  /// **'Registered phone number'**
+  String get validatePhoneInputHint;
+
+  /// Button text for validate
+  ///
+  /// In en, this message translates to:
+  /// **'Validate'**
+  String get validate;
 }
 
 class _AppLocalizationsDelegate

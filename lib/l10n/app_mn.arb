@@ -111,5 +111,41 @@
   "buyPromotionalSet": "Багц худалдан авах",
   "@buyPromotionalSet": {
     "description": "Button text for buy promotional set"
+  },
+  "validateMail": "Хүүхдийн майл хаягыг оруулна уу.",
+  "@validateMail": {
+    "description": "Screen title for validate mail"
+  },
+  "validateMailDescription": "Та хүүхдийн майл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.",
+  "@validateMailDescription": {
+    "description": "Screen title for validate mail"
+  },
+  "validateMailInputLabel": "Хүүхдийн бүртгэлтэй майл хаяг",
+  "@validateMailInputLabel": {
+    "description": "Screen title for validate mail"
+  },
+  "validateMailInputHint": "Бүртгэлтэй майл хаяг",
+  "@validateMailInputHint": {
+    "description": "Screen title for validate mail"
+  },
+  "validate": "Баталгаажуулах",
+  "@validate": {
+    "description": "Button text for validate"
+  },
+  "validatePhone": "Хүүхдийн утасны дугаарыг оруулна уу.",
+  "@validatePhone": {
+    "description": "Screen title for validate phone"
+  },
+  "validatePhoneDescription": "Та хүүхдийн утасны дугаар оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.",
+  "@validatePhoneDescription": {
+    "description": "Screen title for validate phone"
+  },
+  "validatePhoneInputLabel": "Хүүхдийн бүртгэлтэй утасны дугаар",
+  "@validatePhoneInputLabel": {
+    "description": "Screen title for validate phone"
+  },
+  "validatePhoneInputHint": "Бүртгэлтэй утасны дугаар",
+  "@validatePhoneInputHint": {
+    "description": "Screen title for validate phone"
   }
 }

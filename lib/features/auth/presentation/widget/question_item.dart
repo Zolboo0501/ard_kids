@@ -106,7 +106,7 @@ class _QuestionItemState extends State<QuestionItem>
                         child: TextView(
                           text: widget.data["description"],
                           fontSize: 16,
-                          color: Theme.of(context).colorScheme.onPrimary,
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                       )
                     : const SizedBox(),

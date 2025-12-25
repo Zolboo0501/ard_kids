@@ -98,4 +98,33 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get buyPromotionalSet => 'Багц худалдан авах';
+
+  @override
+  String get validateMail => 'Хүүхдийн майл хаягыг оруулна уу.';
+
+  @override
+  String get validateMailDescription =>
+      'Та хүүхдийн майл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.';
+
+  @override
+  String get validateMailInputLabel => 'Хүүхдийн бүртгэлтэй майл хаяг';
+
+  @override
+  String get validateMailInputHint => 'Бүртгэлтэй майл хаяг';
+
+  @override
+  String get validatePhone => 'Хүүхдийн утасны дугаарыг оруулна уу.';
+
+  @override
+  String get validatePhoneDescription =>
+      'Та хүүхдийн утасны дугаар оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.';
+
+  @override
+  String get validatePhoneInputLabel => 'Хүүхдийн бүртгэлтэй утасны дугаар';
+
+  @override
+  String get validatePhoneInputHint => 'Бүртгэлтэй утасны дугаар';
+
+  @override
+  String get validate => 'Баталгаажуулах';
 }

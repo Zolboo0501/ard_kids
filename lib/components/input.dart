@@ -1,5 +1,6 @@
 import 'package:ard_light/components/text_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Input extends StatefulWidget {
   final TextEditingController controller;
@@ -8,6 +9,7 @@ class Input extends StatefulWidget {
   final bool? filled;
   final Color? fillColor;
   final String? label;
+  final bool? isPhone;
   const Input({
     super.key,
     required this.controller,
@@ -16,6 +18,7 @@ class Input extends StatefulWidget {
     this.filled,
     this.label,
     this.fillColor,
+    this.isPhone,
   });
 
   @override
@@ -43,6 +46,13 @@ class _InputState extends State<Input> {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: widget.controller,
+      keyboardType: widget.isPhone == true
+          ? TextInputType.number
+          : TextInputType.text,
+      maxLength: widget.isPhone == true ? 8 : null,
+      inputFormatters: widget.isPhone == true
+          ? [FilteringTextInputFormatter.digitsOnly]
+          : null,
       style: TextStyle(
         color: Colors.black, // 👈 Text color when user types
         fontSize: 16,
@@ -61,7 +71,7 @@ class _InputState extends State<Input> {
         fillColor: widget.fillColor,
         errorStyle: TextStyle(color: Colors.red),
         hintStyle: TextStyle(
-          color: Theme.of(context).colorScheme.onPrimary,
+          color: Theme.of(context).colorScheme.primary,
           fontWeight: FontWeight.w500,
         ),
         border: OutlineInputBorder(

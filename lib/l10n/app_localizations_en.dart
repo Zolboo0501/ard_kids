@@ -98,4 +98,33 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get buyPromotionalSet => 'Buy promotional set';
+
+  @override
+  String get validateMail => 'Please enter the child’s email address.';
+
+  @override
+  String get validateMailDescription =>
+      'By entering the child’s email address, we will verify that address.';
+
+  @override
+  String get validateMailInputLabel => 'Child’s registered email address';
+
+  @override
+  String get validateMailInputHint => 'Registered email address';
+
+  @override
+  String get validatePhone => 'Please enter the child’s phone number.';
+
+  @override
+  String get validatePhoneDescription =>
+      'By entering the child’s phone number, we will verify that number.';
+
+  @override
+  String get validatePhoneInputLabel => 'Child’s registered phone number';
+
+  @override
+  String get validatePhoneInputHint => 'Registered phone number';
+
+  @override
+  String get validate => 'Validate';
 }

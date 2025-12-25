@@ -1,8 +1,14 @@
+import 'package:ard_light/components/button.dart';
+import 'package:ard_light/components/input.dart';
 import 'package:ard_light/components/text_view.dart';
+import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class ValidateMail extends StatefulWidget {
-  ValidateMail({Key? key}) : super(key: key);
+  final Function(int step) onSave;
+  final TextEditingController controller;
+  ValidateMail({Key? key, required this.onSave, required this.controller})
+    : super(key: key);
 
   @override
   _ValidateMailState createState() => _ValidateMailState();
@@ -17,17 +23,29 @@ class _ValidateMailState extends State<ValidateMail> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextView(
-            text: "Хүүхдийн майл хаягыг оруулна уу",
+            text: AppLocalizations.of(context)!.validateMail,
             fontSize: 20,
             fontWeight: FontWeight.w700,
           ),
           const SizedBox(height: 25),
           TextView(
-            text:
-                "Та хүүхдийн майл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.",
+            text: AppLocalizations.of(context)!.validateMailDescription,
             fontSize: 14,
           ),
           const SizedBox(height: 15),
+          Input(
+            controller: widget.controller,
+            hintText: AppLocalizations.of(context)!.validateMailInputHint,
+            errorMessage: "",
+            label: AppLocalizations.of(context)!.validateMailInputLabel,
+          ),
+          Spacer(),
+          Button(
+            onTap: () {
+              widget.onSave(1);
+            },
+            text: AppLocalizations.of(context)!.validate,
+          ),
         ],
       ),
     );

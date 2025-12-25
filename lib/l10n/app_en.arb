@@ -111,5 +111,41 @@
   "buyPromotionalSet": "Buy promotional set",
   "@buyPromotionalSet": {
     "description": "Button text for buy promotional set"
+  },
+  "validateMail": "Please enter the child’s email address.",
+  "@validateMail": {
+    "description": "Screen title for validate mail"
+  },
+  "validateMailDescription": "By entering the child’s email address, we will verify that address.",
+  "@validateMailDescription": {
+    "description": "Screen title for validate mail"
+  },
+  "validateMailInputLabel": "Child’s registered email address",
+  "@validateMailInputLabel": {
+    "description": "Screen title for validate mail"
+  },
+  "validateMailInputHint": "Registered email address",
+  "@validateMailInputHint": {
+    "description": "Screen title for validate mail"
+  },
+  "validatePhone": "Please enter the child’s phone number.",
+  "@validatePhone": {
+    "description": "Screen title for validate phone"
+  },
+  "validatePhoneDescription": "By entering the child’s phone number, we will verify that number.",
+  "@validatePhoneDescription": {
+    "description": "Screen title for validate phone"
+  },
+  "validatePhoneInputLabel": "Child’s registered phone number",
+  "@validatePhoneInputLabel": {
+    "description": "Screen title for validate phone"
+  },
+  "validatePhoneInputHint": "Registered phone number",
+  "@validatePhoneInputHint": {
+    "description": "Screen title for validate phone"
+  },
+  "validate": "Validate",
+  "@validate": {
+    "description": "Button text for validate"
   }
 }

@@ -53,7 +53,7 @@ class _OnboardState extends ConsumerState<Onboard> {
     ];
 
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: Theme.of(context).colorScheme.onPrimary,
       appBar: CustomHeader(
         title: "",
         rightWidgets: [
@@ -126,7 +126,7 @@ class _OnboardState extends ConsumerState<Onboard> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   color: currentPage == i
-                                      ? Theme.of(context).colorScheme.onPrimary
+                                      ? Theme.of(context).colorScheme.primary
                                       : const Color(0xFFADADAD),
                                 ),
                               ),
@@ -146,7 +146,7 @@ class _OnboardState extends ConsumerState<Onboard> {
                                 color: Theme.of(context).colorScheme.secondary,
                                 titleColor: Theme.of(
                                   context,
-                                ).colorScheme.onPrimary,
+                                ).colorScheme.primary,
                               ),
                             ),
                             SizedBox(width: 12),
@@ -155,7 +155,7 @@ class _OnboardState extends ConsumerState<Onboard> {
                                 onTap: () {
                                   GoRouter.of(context).push('/auth/signUp');
                                 },
-                                color: Theme.of(context).colorScheme.onPrimary,
+                                color: Theme.of(context).colorScheme.primary,
                                 text: AppLocalizations.of(context)!.register,
                               ),
                             ),

@@ -46,7 +46,7 @@ class _IndicatorTabState extends State<IndicatorTab>
                           decoration: BoxDecoration(
                             color: Color.lerp(
                               Colors.grey[300],
-                              Theme.of(context).colorScheme.onPrimary,
+                              Theme.of(context).colorScheme.primary,
                               opacity,
                             ),
                             borderRadius: BorderRadius.circular(2),

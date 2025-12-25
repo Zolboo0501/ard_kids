@@ -26,7 +26,7 @@ class TextView extends StatelessWidget {
         textStyle: TextStyle(
           fontSize: fontSize ?? 16,
           fontWeight: fontWeight ?? FontWeight.w400,
-          color: color ?? Theme.of(context).colorScheme.onPrimary,
+          color: color ?? Theme.of(context).colorScheme.primary,
         ),
       ),
     );

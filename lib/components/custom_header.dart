@@ -34,7 +34,7 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
                     width: 20,
                     height: 20,
                     colorFilter: ColorFilter.mode(
-                      Theme.of(context).colorScheme.onPrimary,
+                      Theme.of(context).colorScheme.primary,
                       BlendMode.srcIn,
                     ),
                   ),

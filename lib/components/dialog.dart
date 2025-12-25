@@ -167,7 +167,7 @@ class CustomDialogState extends State<CustomDialog> {
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
                     textAlign: TextAlign.center,
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.primary,
                   ),
                   const SizedBox(height: 15),
                   if (widget.subtitle != null && widget.subtitle!.isNotEmpty)
@@ -176,7 +176,7 @@ class CustomDialogState extends State<CustomDialog> {
                       fontWeight: FontWeight.w400,
                       fontSize: 14,
                       textAlign: TextAlign.center,
-                      color: Theme.of(context).colorScheme.onPrimary,
+                      color: Theme.of(context).colorScheme.primary,
                     ),
                 ],
               ),
@@ -192,8 +192,8 @@ class CustomDialogState extends State<CustomDialog> {
                     widget.onComplete?.call();
                   },
                   text: widget.buttonTitle ?? "",
-                  color: Theme.of(context).colorScheme.onPrimary,
-                  titleColor: Theme.of(context).colorScheme.primary,
+                  color: Theme.of(context).colorScheme.primary,
+                  titleColor: Theme.of(context).colorScheme.onPrimary,
                 ),
               ),
           ],

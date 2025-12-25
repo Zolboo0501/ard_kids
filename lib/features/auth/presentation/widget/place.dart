@@ -123,7 +123,7 @@ class Place extends StatelessWidget {
                   text: AppLocalizations.of(context)!.seeLocation,
                   icon: SvgPicture.asset("assets/icons/mapPin.svg"),
                   color: Theme.of(context).colorScheme.onSurface,
-                  titleColor: Theme.of(context).colorScheme.onPrimary,
+                  titleColor: Theme.of(context).colorScheme.primary,
                 ),
               ],
             ),

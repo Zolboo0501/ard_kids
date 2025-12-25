@@ -11,7 +11,8 @@ class CustomBottomSheet {
   }) {
     return showModalBottomSheet<T>(
       context: context,
-      backgroundColor: backgroundColor ?? Theme.of(context).colorScheme.primary,
+      backgroundColor:
+          backgroundColor ?? Theme.of(context).colorScheme.onPrimary,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),

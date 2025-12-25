@@ -19,6 +19,8 @@ class ValidateChildStep extends StatefulWidget {
 
 class _ValidateChildStepState extends State<ValidateChildStep>
     with SingleTickerProviderStateMixin {
+  final _emailController = TextEditingController();
+  final _phoneController = TextEditingController();
   late TabController _tabController;
   double _currentPage = 0.0;
 
@@ -39,6 +41,12 @@ class _ValidateChildStepState extends State<ValidateChildStep>
     super.dispose();
   }
 
+  void onSave(int step) {
+    if (step < 6) {
+      _tabController.animateTo(step);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,8 +63,8 @@ class _ValidateChildStepState extends State<ValidateChildStep>
         currentPage: _currentPage,
         isHideStep: true,
         child: [
-          ValidateMail(),
-          ValidatePhone(),
+          ValidateMail(onSave: onSave, controller: _emailController),
+          ValidatePhone(onSave: onSave, controller: _phoneController),
           ValidateInfo(),
           CardAddress(),
           ChildLoginUsername(),
