@@ -113,6 +113,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get validateMailInputHint => 'Бүртгэлтэй майл хаяг';
 
   @override
+  String get validateMailInputError => 'Бүртгэлтэй майл хаяг оруулна уу.';
+
+  @override
   String get validatePhone => 'Хүүхдийн утасны дугаарыг оруулна уу.';
 
   @override
@@ -124,6 +127,10 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get validatePhoneInputHint => 'Бүртгэлтэй утасны дугаар';
+
+  @override
+  String get validatePhoneInputError =>
+      'Бүртгэлтэй утасны дугаарыг оруулна уу.';
 
   @override
   String get validate => 'Баталгаажуулах';
@@ -139,11 +146,23 @@ class AppLocalizationsMn extends AppLocalizations {
   String get validateChildFamilyName => 'Ургийн овог';
 
   @override
+  String get validateChildFamilyNameError => 'Ургийн овог оруулна уу.';
+
+  @override
   String get validateChildParentName => 'Эцэг/эхийн нэр';
+
+  @override
+  String get validateChildParentNameError => 'Эцэг/эхийн нэр оруулна уу.';
 
   @override
   String get validateChildName => 'Хүүхдийн нэр';
 
   @override
-  String get validateRegisterHint => 'Register number';
+  String get validateChildNameError => 'Хүүхдийн нэр оруулна уу.';
+
+  @override
+  String get validateRegisterHint => 'Регистрийн дугаар';
+
+  @override
+  String get validateRegisterHintError => 'Регистрийн дугаар оруулна уу.';
 }

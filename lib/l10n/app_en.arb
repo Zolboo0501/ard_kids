@@ -128,6 +128,10 @@
   "@validateMailInputHint": {
     "description": "Screen title for validate mail"
   },
+  "validateMailInputError": "Please enter a valid email address.",
+  "@validateMailInputError": {
+    "description": "Screen title for validate mail"
+  },
   "validatePhone": "Please enter the child’s phone number.",
   "@validatePhone": {
     "description": "Screen title for validate phone"
@@ -143,6 +147,10 @@
   "validatePhoneInputHint": "Registered phone number",
   "@validatePhoneInputHint": {
     "description": "Screen title for validate phone"
+  },
+  "validatePhoneInputError": "Please enter a valid phone number.",
+  "@validatePhoneInputError": {
+    "description": "Screen title for validate phone error"
   },
   "validate": "Validate",
   "@validate": {
@@ -160,16 +168,32 @@
   "@validateChildFamilyName": {
     "description": "Validate child family name"
   },
+  "validateChildFamilyNameError": "Please enter a valid family name.",
+  "@validateChildFamilyNameError": {
+    "description": "Validate child family name error"
+  },
   "validateChildParentName": "Parent name",
   "@validateChildParentName": {
     "description": "Validate child parent name"
+  },
+  "validateChildParentNameError": "Please enter a valid parent name.",
+  "@validateChildParentNameError": {
+    "description": "Validate child parent name error"
   },
   "validateChildName": "Child name",
   "@validateChildName": {
     "description": "Validate child name"
   },
+  "validateChildNameError": "Please enter a valid child name.",
+  "@validateChildNameError": {
+    "description": "Validate child name error"
+  },
   "validateRegisterHint": "Register number",
   "@validateRegisterHint": {
     "description": "Validate register number hint"
+  },
+  "validateRegisterHintError": "Please enter a valid register number.",
+  "@validateRegisterHintError": {
+    "description": "Validate register number error"
   }
 }

@@ -15,38 +15,46 @@ class ValidateMail extends StatefulWidget {
 }
 
 class _ValidateMailState extends State<ValidateMail> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          TextView(
-            text: AppLocalizations.of(context)!.validateMail,
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-          ),
-          const SizedBox(height: 25),
-          TextView(
-            text: AppLocalizations.of(context)!.validateMailDescription,
-            fontSize: 14,
-          ),
-          const SizedBox(height: 15),
-          Input(
-            controller: widget.controller,
-            hintText: AppLocalizations.of(context)!.validateMailInputHint,
-            errorMessage: "",
-            label: AppLocalizations.of(context)!.validateMailInputLabel,
-          ),
-          Spacer(),
-          Button(
-            onTap: () {
-              widget.onSave(1);
-            },
-            text: AppLocalizations.of(context)!.validate,
-          ),
-        ],
+    return Form(
+      key: _formKey,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextView(
+              text: AppLocalizations.of(context)!.validateMail,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
+            const SizedBox(height: 25),
+            TextView(
+              text: AppLocalizations.of(context)!.validateMailDescription,
+              fontSize: 14,
+            ),
+            const SizedBox(height: 15),
+            Input(
+              controller: widget.controller,
+              hintText: AppLocalizations.of(context)!.validateMailInputHint,
+              errorMessage: AppLocalizations.of(
+                context,
+              )!.validateMailInputError,
+              label: AppLocalizations.of(context)!.validateMailInputLabel,
+            ),
+            Spacer(),
+            Button(
+              onTap: () {
+                if (_formKey.currentState!.validate()) {
+                  widget.onSave(1);
+                }
+              },
+              text: AppLocalizations.of(context)!.validate,
+            ),
+          ],
+        ),
       ),
     );
   }

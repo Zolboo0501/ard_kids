@@ -15,39 +15,47 @@ class ValidatePhone extends StatefulWidget {
 }
 
 class _ValidatePhoneState extends State<ValidatePhone> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          TextView(
-            text: AppLocalizations.of(context)!.validatePhone,
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-          ),
-          const SizedBox(height: 25),
-          TextView(
-            text: AppLocalizations.of(context)!.validatePhoneDescription,
-            fontSize: 14,
-          ),
-          const SizedBox(height: 15),
-          Input(
-            controller: widget.controller,
-            hintText: AppLocalizations.of(context)!.validatePhoneInputHint,
-            errorMessage: "",
-            label: AppLocalizations.of(context)!.validatePhoneInputLabel,
-            isPhone: true,
-          ),
-          Spacer(),
-          Button(
-            onTap: () {
-              widget.onSave(1);
-            },
-            text: AppLocalizations.of(context)!.validate,
-          ),
-        ],
+    return Form(
+      key: _formKey,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextView(
+              text: AppLocalizations.of(context)!.validatePhone,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
+            const SizedBox(height: 25),
+            TextView(
+              text: AppLocalizations.of(context)!.validatePhoneDescription,
+              fontSize: 14,
+            ),
+            const SizedBox(height: 15),
+            Input(
+              controller: widget.controller,
+              hintText: AppLocalizations.of(context)!.validatePhoneInputHint,
+              errorMessage: AppLocalizations.of(
+                context,
+              )!.validatePhoneInputError,
+              label: AppLocalizations.of(context)!.validatePhoneInputLabel,
+              isPhone: true,
+            ),
+            Spacer(),
+            Button(
+              onTap: () {
+                if (_formKey.currentState!.validate()) {
+                  widget.onSave(1);
+                }
+              },
+              text: AppLocalizations.of(context)!.validate,
+            ),
+          ],
+        ),
       ),
     );
   }

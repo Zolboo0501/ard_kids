@@ -128,6 +128,10 @@
   "@validateMailInputHint": {
     "description": "Screen title for validate mail"
   },
+  "validateMailInputError": "Бүртгэлтэй майл хаяг оруулна уу.",
+  "@validateMailInputError": {
+    "description": "Screen title for validate mail"
+  },
   "validate": "Баталгаажуулах",
   "@validate": {
     "description": "Button text for validate"
@@ -135,6 +139,10 @@
   "validatePhone": "Хүүхдийн утасны дугаарыг оруулна уу.",
   "@validatePhone": {
     "description": "Screen title for validate phone"
+  },
+  "validatePhoneInputError": "Бүртгэлтэй утасны дугаарыг оруулна уу.",
+  "@validatePhoneInputError": {
+    "description": "Screen title for validate phone error"
   },
   "validatePhoneDescription": "Та хүүхдийн утасны дугаар оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.",
   "@validatePhoneDescription": {
@@ -167,5 +175,25 @@
   "validateChildName": "Хүүхдийн нэр",
   "@validateChildName": {
     "description": "Validate child name"
+  },
+  "validateRegisterHint": "Регистрийн дугаар",
+  "@validateRegisterHint": {
+    "description": "Validate register number hint"
+  },
+  "validateChildFamilyNameError": "Ургийн овог оруулна уу.",
+  "@validateChildFamilyNameError": {
+    "description": "Validate child family name error"
+  },
+  "validateChildParentNameError": "Эцэг/эхийн нэр оруулна уу.",
+  "@validateChildParentNameError": {
+    "description": "Validate child parent name error"
+  },
+  "validateChildNameError": "Хүүхдийн нэр оруулна уу.",
+  "@validateChildNameError": {
+    "description": "Validate child name error"
+  },
+  "validateRegisterHintError": "Регистрийн дугаар оруулна уу.",
+  "@validateRegisterHintError": {
+    "description": "Validate register number error"
   }
 }

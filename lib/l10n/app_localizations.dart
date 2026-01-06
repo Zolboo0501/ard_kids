@@ -290,6 +290,12 @@ abstract class AppLocalizations {
   /// **'Registered email address'**
   String get validateMailInputHint;
 
+  /// Screen title for validate mail
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address.'**
+  String get validateMailInputError;
+
   /// Screen title for validate phone
   ///
   /// In en, this message translates to:
@@ -313,6 +319,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Registered phone number'**
   String get validatePhoneInputHint;
+
+  /// Screen title for validate phone error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid phone number.'**
+  String get validatePhoneInputError;
 
   /// Button text for validate
   ///
@@ -338,11 +350,23 @@ abstract class AppLocalizations {
   /// **'Family name'**
   String get validateChildFamilyName;
 
+  /// Validate child family name error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid family name.'**
+  String get validateChildFamilyNameError;
+
   /// Validate child parent name
   ///
   /// In en, this message translates to:
   /// **'Parent name'**
   String get validateChildParentName;
+
+  /// Validate child parent name error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid parent name.'**
+  String get validateChildParentNameError;
 
   /// Validate child name
   ///
@@ -350,11 +374,23 @@ abstract class AppLocalizations {
   /// **'Child name'**
   String get validateChildName;
 
+  /// Validate child name error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid child name.'**
+  String get validateChildNameError;
+
   /// Validate register number hint
   ///
   /// In en, this message translates to:
   /// **'Register number'**
   String get validateRegisterHint;
+
+  /// Validate register number error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid register number.'**
+  String get validateRegisterHintError;
 }
 
 class _AppLocalizationsDelegate

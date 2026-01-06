@@ -8,8 +8,8 @@ class LightColors {
 
     secondary: Color(0xFFFFFFFF),
     onSecondary: Color(0xE5000000),
-    error: Color(0xFFC9372C),
-    onError: Color(0xFFFF6B6B),
+    error: Color(0xFFFF6B6B),
+    onError: Color(0xFFC9372C),
     surface: Color(0xFFF5F5F5),
     onSurface: Color(0xFFE0E0E0),
   );

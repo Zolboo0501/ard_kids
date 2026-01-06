@@ -113,6 +113,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get validateMailInputHint => 'Registered email address';
 
   @override
+  String get validateMailInputError => 'Please enter a valid email address.';
+
+  @override
   String get validatePhone => 'Please enter the child’s phone number.';
 
   @override
@@ -124,6 +127,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get validatePhoneInputHint => 'Registered phone number';
+
+  @override
+  String get validatePhoneInputError => 'Please enter a valid phone number.';
 
   @override
   String get validate => 'Validate';
@@ -139,11 +145,26 @@ class AppLocalizationsEn extends AppLocalizations {
   String get validateChildFamilyName => 'Family name';
 
   @override
+  String get validateChildFamilyNameError =>
+      'Please enter a valid family name.';
+
+  @override
   String get validateChildParentName => 'Parent name';
+
+  @override
+  String get validateChildParentNameError =>
+      'Please enter a valid parent name.';
 
   @override
   String get validateChildName => 'Child name';
 
   @override
+  String get validateChildNameError => 'Please enter a valid child name.';
+
+  @override
   String get validateRegisterHint => 'Register number';
+
+  @override
+  String get validateRegisterHintError =>
+      'Please enter a valid register number.';
 }

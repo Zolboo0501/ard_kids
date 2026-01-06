@@ -11,6 +11,7 @@ class Input extends StatefulWidget {
   final String? label;
   final bool? isPhone;
   final bool? enabled;
+  final bool? error;
   const Input({
     super.key,
     required this.controller,
@@ -21,6 +22,7 @@ class Input extends StatefulWidget {
     this.fillColor = Colors.white,
     this.isPhone,
     this.enabled,
+    this.error,
   });
 
   @override
@@ -45,7 +47,6 @@ class _InputState extends State<Input> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      enabled: widget.enabled,
       controller: widget.controller,
       keyboardType: widget.isPhone == true
           ? TextInputType.number
@@ -99,11 +100,28 @@ class _InputState extends State<Input> {
             width: 2,
           ),
         ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.error,
+            width: 1,
+          ),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.error,
+            width: 1,
+          ),
+        ),
+        errorText: widget.error == true ? '' : null,
         counterText: widget.isPhone == true ? "" : null,
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
-          return widget.errorMessage;
+          return widget.errorMessage?.isNotEmpty == true
+              ? widget.errorMessage
+              : null;
         }
         return null;
       },
