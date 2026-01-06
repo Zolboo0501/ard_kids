@@ -2,7 +2,7 @@ import 'package:ard_light/components/button.dart';
 import 'package:ard_light/components/input.dart';
 import 'package:ard_light/components/register_input.dart';
 import 'package:ard_light/components/text_view.dart';
-import 'package:ard_light/features/auth/presentation/models/register.dart';
+import 'package:ard_light/features/auth/presentation/models/auth/validate_register_model.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 

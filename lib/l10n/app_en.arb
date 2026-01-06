@@ -195,5 +195,45 @@
   "validateRegisterHintError": "Please enter a valid register number.",
   "@validateRegisterHintError": {
     "description": "Validate register number error"
+  },
+  "validateAddress": "Select a branch that accepts cards.",
+  "@validateAddress": {
+    "description": "Validate select a branch that accepts cards."
+  },
+  "validateAddressDescription": "Select a branch that accepts cards.",
+  "@validateAddressDescription": {
+    "description": "Validate select a branch that accepts cards."
+  },
+  "validateAddressCity": "City",
+  "@validateAddressCity": {
+    "description": "Validate address city"
+  },
+  "validateAddressCityError": "Please select city.",
+  "@validateAddressCityError": {
+    "description": "Validate address city error"
+  },
+  "validateAddressDistrict": "District",
+  "@validateAddressDistrict": {
+    "description": "Validate address district"
+  },
+  "validateAddressDistrictError": "Please select district.",
+  "@validateAddressDistrictError": {
+    "description": "Validate address district error"
+  },
+  "validateAddressBranch": "Branch",
+  "@validateAddressBranch": {
+    "description": "Validate address branch"
+  },
+  "validateAddressBranchError": "Please select branch.",
+  "@validateAddressBranchError": {
+    "description": "Validate address branch error"
+  },
+  "validateAddressBranchDescription": "Branch description",
+  "@validateAddressBranchDescription": {
+    "description": "Validate address branch description"
+  },
+  "validateAddressBranchDescriptionError": "Please enter a valid branch description.",
+  "@validateAddressBranchDescriptionError": {
+    "description": "Validate address branch description error"
   }
 }

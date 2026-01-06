@@ -391,6 +391,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please enter a valid register number.'**
   String get validateRegisterHintError;
+
+  /// Validate select a branch that accepts cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a branch that accepts cards.'**
+  String get validateAddress;
+
+  /// Validate select a branch that accepts cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a branch that accepts cards.'**
+  String get validateAddressDescription;
+
+  /// Validate address city
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get validateAddressCity;
+
+  /// Validate address city error
+  ///
+  /// In en, this message translates to:
+  /// **'Please select city.'**
+  String get validateAddressCityError;
+
+  /// Validate address district
+  ///
+  /// In en, this message translates to:
+  /// **'District'**
+  String get validateAddressDistrict;
+
+  /// Validate address district error
+  ///
+  /// In en, this message translates to:
+  /// **'Please select district.'**
+  String get validateAddressDistrictError;
+
+  /// Validate address branch
+  ///
+  /// In en, this message translates to:
+  /// **'Branch'**
+  String get validateAddressBranch;
+
+  /// Validate address branch error
+  ///
+  /// In en, this message translates to:
+  /// **'Please select branch.'**
+  String get validateAddressBranchError;
+
+  /// Validate address branch description
+  ///
+  /// In en, this message translates to:
+  /// **'Branch description'**
+  String get validateAddressBranchDescription;
+
+  /// Validate address branch description error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid branch description.'**
+  String get validateAddressBranchDescriptionError;
 }
 
 class _AppLocalizationsDelegate

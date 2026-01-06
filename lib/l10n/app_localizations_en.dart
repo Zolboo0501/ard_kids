@@ -167,4 +167,36 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get validateRegisterHintError =>
       'Please enter a valid register number.';
+
+  @override
+  String get validateAddress => 'Select a branch that accepts cards.';
+
+  @override
+  String get validateAddressDescription =>
+      'Select a branch that accepts cards.';
+
+  @override
+  String get validateAddressCity => 'City';
+
+  @override
+  String get validateAddressCityError => 'Please select city.';
+
+  @override
+  String get validateAddressDistrict => 'District';
+
+  @override
+  String get validateAddressDistrictError => 'Please select district.';
+
+  @override
+  String get validateAddressBranch => 'Branch';
+
+  @override
+  String get validateAddressBranchError => 'Please select branch.';
+
+  @override
+  String get validateAddressBranchDescription => 'Branch description';
+
+  @override
+  String get validateAddressBranchDescriptionError =>
+      'Please enter a valid branch description.';
 }

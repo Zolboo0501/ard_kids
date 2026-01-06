@@ -165,4 +165,37 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get validateRegisterHintError => 'Регистрийн дугаар оруулна уу.';
+
+  @override
+  String get validateAddress =>
+      'Карт хүлээн авах салбарын мэдээллийг баталгаажуулах';
+
+  @override
+  String get validateAddressDescription =>
+      'Та өөрийн хүүхдийн карт хүлээн авах салбарын мэдээллийг баталгаажуулна уу.';
+
+  @override
+  String get validateAddressCity => 'Хот/Аймаг';
+
+  @override
+  String get validateAddressCityError => 'Хот/Аймаг сонгоно уу.';
+
+  @override
+  String get validateAddressDistrict => 'Дүүрэг';
+
+  @override
+  String get validateAddressDistrictError => 'Дүүрэг сонгоно уу';
+
+  @override
+  String get validateAddressBranch => 'Салбар';
+
+  @override
+  String get validateAddressBranchError => 'Салбар сонгоно уу.';
+
+  @override
+  String get validateAddressBranchDescription => 'Салбарын дэлгэрэнгүй';
+
+  @override
+  String get validateAddressBranchDescriptionError =>
+      'Салбарын дэлгэрэнгүй мэдээлэл оруулна уу.';
 }

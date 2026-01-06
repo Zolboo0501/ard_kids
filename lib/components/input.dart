@@ -73,7 +73,7 @@ class _InputState extends State<Input> {
         fillColor: widget.enabled == false
             ? Colors.grey[200]
             : widget.fillColor,
-        errorStyle: TextStyle(color: Colors.red),
+        errorStyle: TextStyle(color: Theme.of(context).colorScheme.error),
         hintStyle: TextStyle(
           color: Theme.of(context).hintColor,
           fontWeight: FontWeight.w500,

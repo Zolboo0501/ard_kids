@@ -195,5 +195,45 @@
   "validateRegisterHintError": "Регистрийн дугаар оруулна уу.",
   "@validateRegisterHintError": {
     "description": "Validate register number error"
+  },
+  "validateAddress": "Карт хүлээн авах салбарын мэдээллийг баталгаажуулах",
+  "@validateAddress": {
+    "description": "Validate select a branch that accepts cards."
+  },
+  "validateAddressDescription": "Та өөрийн хүүхдийн карт хүлээн авах салбарын мэдээллийг баталгаажуулна уу.",
+  "@validateAddressDescription": {
+    "description": "Validate select a branch that accepts cards."
+  },
+  "validateAddressCity": "Хот/Аймаг",
+  "@validateAddressCity": {
+    "description": "Validate address city"
+  },
+  "validateAddressCityError": "Хот/Аймаг сонгоно уу.",
+  "@validateAddressCityError": {
+    "description": "Validate address city error"
+  },
+  "validateAddressDistrict": "Дүүрэг",
+  "@validateAddressDistrict": {
+    "description": "Validate address district"
+  },
+  "validateAddressDistrictError": "Дүүрэг сонгоно уу",
+  "@validateAddressDistrictError": {
+    "description": "Validate address district error"
+  },
+  "validateAddressBranch": "Салбар",
+  "@validateAddressBranch": {
+    "description": "Validate address branch"
+  },
+  "validateAddressBranchError": "Салбар сонгоно уу.",
+  "@validateAddressBranchError": {
+    "description": "Validate address branch error"
+  },
+  "validateAddressBranchDescription": "Салбарын дэлгэрэнгүй",
+  "@validateAddressBranchDescription": {
+    "description": "Validate address branch description"
+  },
+  "validateAddressBranchDescriptionError": "Салбарын дэлгэрэнгүй мэдээлэл оруулна уу.",
+  "@validateAddressBranchDescriptionError": {
+    "description": "Validate address branch description error"
   }
 }

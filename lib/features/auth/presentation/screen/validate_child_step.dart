@@ -1,7 +1,8 @@
 import 'package:ard_light/components/Indicator_tab.dart';
 import 'package:ard_light/components/custom_header.dart';
 import 'package:ard_light/components/language_change.dart';
-import 'package:ard_light/features/auth/presentation/models/register.dart';
+import 'package:ard_light/features/auth/presentation/models/auth/validate_address_model.dart';
+import 'package:ard_light/features/auth/presentation/models/auth/validate_register_model.dart';
 import 'package:ard_light/features/auth/presentation/tab/card_address.dart';
 import 'package:ard_light/features/auth/presentation/tab/child_login_username.dart';
 import 'package:ard_light/features/auth/presentation/tab/contract.dart';
@@ -23,7 +24,7 @@ class _ValidateChildStepState extends State<ValidateChildStep>
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
   final _registerController = RegisterController();
-
+  final _addressController = ValidateAddressModel();
   late TabController _tabController;
   double _currentPage = 0.0;
 
@@ -73,7 +74,7 @@ class _ValidateChildStepState extends State<ValidateChildStep>
             ValidateMail(onSave: onSave, controller: _emailController),
             ValidatePhone(onSave: onSave, controller: _phoneController),
             ValidateInfo(onSave: onSave, controller: _registerController),
-            CardAddress(),
+            CardAddress(onSave: onSave, controller: _addressController),
             ChildLoginUsername(),
             Contract(),
           ],
