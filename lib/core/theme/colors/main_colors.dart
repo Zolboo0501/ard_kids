@@ -14,7 +14,7 @@ class LightColors {
     onSurface: Color(0xFFE0E0E0),
   );
 
-  static const Color textBlack = Color(0xFF000000);
+  static const Color hintColor = Color(0xFFBDBDBD);
 }
 
 class DarkColors {
@@ -30,5 +30,5 @@ class DarkColors {
     onSurface: Color(0xFFFFFFFF),
   );
 
-  static const Color textWhite = Color(0xFFFFFFFF);
+  static const Color hintColor = Color(0xFFBDBDBD);
 }

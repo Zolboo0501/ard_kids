@@ -147,5 +147,25 @@
   "validatePhoneInputHint": "Бүртгэлтэй утасны дугаар",
   "@validatePhoneInputHint": {
     "description": "Screen title for validate phone"
+  },
+  "validateInfo": "Хүүхдийн мэдээлэл баталгаажуулах",
+  "@validateInfo": {
+    "description": "Screen title for validate info"
+  },
+  "validateInfoDescription": "Та өөрийн хүүхдийн мэдээллийг шалган баталгаажуулна уу.",
+  "@validateInfoDescription": {
+    "description": "Screen title for validate info"
+  },
+  "validateChildFamilyName": "Ургийн овог",
+  "@validateChildFamilyName": {
+    "description": "Validate child family name"
+  },
+  "validateChildParentName": "Эцэг/эхийн нэр",
+  "@validateChildParentName": {
+    "description": "Validate child parent name"
+  },
+  "validateChildName": "Хүүхдийн нэр",
+  "@validateChildName": {
+    "description": "Validate child name"
   }
 }

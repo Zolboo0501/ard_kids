@@ -147,5 +147,29 @@
   "validate": "Validate",
   "@validate": {
     "description": "Button text for validate"
+  },
+  "validateInfo": "Verify child information",
+  "@validateInfo": {
+    "description": "Screen title for validate info"
+  },
+  "validateInfoDescription": "Please verify your child's information.",
+  "@validateInfoDescription": {
+    "description": "Screen title for validate info"
+  },
+  "validateChildFamilyName": "Family name",
+  "@validateChildFamilyName": {
+    "description": "Validate child family name"
+  },
+  "validateChildParentName": "Parent name",
+  "@validateChildParentName": {
+    "description": "Validate child parent name"
+  },
+  "validateChildName": "Child name",
+  "@validateChildName": {
+    "description": "Validate child name"
+  },
+  "validateRegisterHint": "Register number",
+  "@validateRegisterHint": {
+    "description": "Validate register number hint"
   }
 }

@@ -127,4 +127,23 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get validate => 'Баталгаажуулах';
+
+  @override
+  String get validateInfo => 'Хүүхдийн мэдээлэл баталгаажуулах';
+
+  @override
+  String get validateInfoDescription =>
+      'Та өөрийн хүүхдийн мэдээллийг шалган баталгаажуулна уу.';
+
+  @override
+  String get validateChildFamilyName => 'Ургийн овог';
+
+  @override
+  String get validateChildParentName => 'Эцэг/эхийн нэр';
+
+  @override
+  String get validateChildName => 'Хүүхдийн нэр';
+
+  @override
+  String get validateRegisterHint => 'Register number';
 }

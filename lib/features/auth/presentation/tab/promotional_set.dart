@@ -2,6 +2,7 @@ import 'package:ard_light/components/button.dart';
 import 'package:ard_light/components/text_view.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class PromotionalSet extends StatefulWidget {
   PromotionalSet({Key? key}) : super(key: key);
@@ -81,7 +82,9 @@ class _PromotionalSetState extends State<PromotionalSet> {
           ),
           Spacer(),
           Button(
-            onTap: () {},
+            onTap: () {
+              GoRouter.of(context).push('/auth/validateChild');
+            },
             text: AppLocalizations.of(context)!.buyPromotionalSet,
           ),
         ],

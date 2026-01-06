@@ -72,10 +72,10 @@ class SignUp extends StatelessWidget {
                                   )!.registerVerifyAlertButtonTitle2,
                                   color: Theme.of(
                                     context,
-                                  ).colorScheme.secondary,
+                                  ).colorScheme.onPrimary,
                                   titleColor: Theme.of(
                                     context,
-                                  ).colorScheme.onPrimary,
+                                  ).colorScheme.primary,
                                 ),
                               ),
                               SizedBox(width: 12),
@@ -87,9 +87,7 @@ class SignUp extends StatelessWidget {
                                       context,
                                     ).push('/auth/registerChildren');
                                   },
-                                  color: Theme.of(
-                                    context,
-                                  ).colorScheme.onPrimary,
+                                  color: Theme.of(context).colorScheme.primary,
                                   text: AppLocalizations.of(
                                     context,
                                   )!.registerVerifyAlertButtonTitle,

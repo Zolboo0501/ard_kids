@@ -1,6 +1,7 @@
 import 'package:ard_light/components/Indicator_tab.dart';
 import 'package:ard_light/components/custom_header.dart';
 import 'package:ard_light/components/language_change.dart';
+import 'package:ard_light/features/auth/presentation/models/register.dart';
 import 'package:ard_light/features/auth/presentation/tab/card_address.dart';
 import 'package:ard_light/features/auth/presentation/tab/child_login_username.dart';
 import 'package:ard_light/features/auth/presentation/tab/contract.dart';
@@ -21,6 +22,8 @@ class _ValidateChildStepState extends State<ValidateChildStep>
     with SingleTickerProviderStateMixin {
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
+  final _registerController = RegisterController();
+
   late TabController _tabController;
   double _currentPage = 0.0;
 
@@ -49,27 +52,32 @@ class _ValidateChildStepState extends State<ValidateChildStep>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomHeader(
-        isBack: true,
-        rightWidgets: [
-          Question(isHasMarginRight: true, isHasBorder: true),
-          LanguageChange(isHasMarginRight: true, isHasBorder: true),
-        ],
-      ),
-      body: IndicatorTab(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-        tabController: _tabController,
-        currentPage: _currentPage,
-        isHideStep: true,
-        child: [
-          ValidateMail(onSave: onSave, controller: _emailController),
-          ValidatePhone(onSave: onSave, controller: _phoneController),
-          ValidateInfo(),
-          CardAddress(),
-          ChildLoginUsername(),
-          Contract(),
-        ],
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        appBar: CustomHeader(
+          isBack: true,
+          rightWidgets: [
+            Question(isHasMarginRight: true, isHasBorder: true),
+            LanguageChange(isHasMarginRight: true, isHasBorder: true),
+          ],
+        ),
+        body: IndicatorTab(
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          tabController: _tabController,
+          currentPage: _currentPage,
+          isHideStep: true,
+          child: [
+            ValidateMail(onSave: onSave, controller: _emailController),
+            ValidatePhone(onSave: onSave, controller: _phoneController),
+            ValidateInfo(onSave: onSave, controller: _registerController),
+            CardAddress(),
+            ChildLoginUsername(),
+            Contract(),
+          ],
+        ),
       ),
     );
   }

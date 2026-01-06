@@ -127,4 +127,23 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get validate => 'Validate';
+
+  @override
+  String get validateInfo => 'Verify child information';
+
+  @override
+  String get validateInfoDescription =>
+      'Please verify your child\'s information.';
+
+  @override
+  String get validateChildFamilyName => 'Family name';
+
+  @override
+  String get validateChildParentName => 'Parent name';
+
+  @override
+  String get validateChildName => 'Child name';
+
+  @override
+  String get validateRegisterHint => 'Register number';
 }

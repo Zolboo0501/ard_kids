@@ -319,6 +319,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Validate'**
   String get validate;
+
+  /// Screen title for validate info
+  ///
+  /// In en, this message translates to:
+  /// **'Verify child information'**
+  String get validateInfo;
+
+  /// Screen title for validate info
+  ///
+  /// In en, this message translates to:
+  /// **'Please verify your child\'s information.'**
+  String get validateInfoDescription;
+
+  /// Validate child family name
+  ///
+  /// In en, this message translates to:
+  /// **'Family name'**
+  String get validateChildFamilyName;
+
+  /// Validate child parent name
+  ///
+  /// In en, this message translates to:
+  /// **'Parent name'**
+  String get validateChildParentName;
+
+  /// Validate child name
+  ///
+  /// In en, this message translates to:
+  /// **'Child name'**
+  String get validateChildName;
+
+  /// Validate register number hint
+  ///
+  /// In en, this message translates to:
+  /// **'Register number'**
+  String get validateRegisterHint;
 }
 
 class _AppLocalizationsDelegate
