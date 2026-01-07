@@ -235,5 +235,49 @@
   "validateAddressBranchDescriptionError": "Салбарын дэлгэрэнгүй мэдээлэл оруулна уу.",
   "@validateAddressBranchDescriptionError": {
     "description": "Validate address branch description error"
+  },
+  "validateLoginUsernameTitle": "Хүүхдийн нэвтрэх нэр оруулна уу",
+  "@validateLoginUsernameTitle": {
+    "description": "Validate login username"
+  },
+  "validateLoginUsername": "Нэвтрэх нэр",
+  "@validateLoginUsername": {
+    "description": "Validate login username"
+  },
+  "validateLoginUsernameError": "Та зөв нэвтрэх нэр оруулна уу.",
+  "@validateLoginUsernameError": {
+    "description": "Validate login username error"
+  },
+  "validateLoginUsernameValidation": "Та 7-20 тэмдэгтийн латин үсэг, тоо болон тусгай тэмдэгт оруулах боломжтой.",
+  "@validateLoginUsernameValidation": {
+    "description": "Validate login username validation"
+  },
+  "validateLoginUsernameDescription": "Хүүхдийн нэвтрэх нэр оруулснаар тухайн данс байгаа эсэхийг шалгах болно.",
+  "@validateLoginUsernameDescription": {
+    "description": "Validate login username description"
+  },
+  "validateContractApprove": "Зөвшөөрөх",
+  "@validateContractApprove": {
+    "description": "Validate contract approve"
+  },
+  "validateContractReject": "Татгалзах",
+  "@validateContractReject": {
+    "description": "Validate contract reject"
+  },
+  "validateSuccessTitle": "Амжилттай",
+  "@validateSuccessTitle": {
+    "description": "Validate success title"
+  },
+  "validateSuccessDescription": "Хүүхдийн мэдээлэл болон нэвтрэх нэр амжилттай баталгаажлаа",
+  "@validateSuccessDescription": {
+    "description": "Validate success description"
+  },
+  "validateSuccessButton": "Дахин хүүхэд бүртгэх",
+  "@validateSuccessButton": {
+    "description": "Validate success button"
+  },
+  "validateSuccessButton2": "Дуусгах",
+  "@validateSuccessButton2": {
+    "description": "Validate success button"
   }
 }

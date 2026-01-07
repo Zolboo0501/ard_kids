@@ -12,6 +12,7 @@ class Input extends StatefulWidget {
   final bool? isPhone;
   final bool? enabled;
   final bool? error;
+  final FormFieldValidator<String>? validator;
   const Input({
     super.key,
     required this.controller,
@@ -23,6 +24,7 @@ class Input extends StatefulWidget {
     this.isPhone,
     this.enabled,
     this.error,
+    this.validator,
   });
 
   @override
@@ -117,14 +119,16 @@ class _InputState extends State<Input> {
         errorText: widget.error == true ? '' : null,
         counterText: widget.isPhone == true ? "" : null,
       ),
-      validator: (value) {
-        if (value == null || value.isEmpty) {
-          return widget.errorMessage?.isNotEmpty == true
-              ? widget.errorMessage
-              : null;
-        }
-        return null;
-      },
+      validator:
+          widget.validator ??
+          (value) {
+            if (value == null || value.isEmpty) {
+              return widget.errorMessage?.isNotEmpty == true
+                  ? widget.errorMessage
+                  : null;
+            }
+            return null;
+          },
     );
   }
 }

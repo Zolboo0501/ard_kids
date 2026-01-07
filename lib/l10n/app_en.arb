@@ -235,5 +235,49 @@
   "validateAddressBranchDescriptionError": "Please enter a valid branch description.",
   "@validateAddressBranchDescriptionError": {
     "description": "Validate address branch description error"
+  },
+  "validateLoginUsernameTitle": "Please enter a your child login username",
+  "@validateLoginUsernameTitle": {
+    "description": "Validate login username"
+  },
+  "validateLoginUsername": "Login username",
+  "@validateLoginUsername": {
+    "description": "Validate login username"
+  },
+  "validateLoginUsernameError": "Please enter a valid login username.",
+  "@validateLoginUsernameError": {
+    "description": "Validate login username error"
+  },
+  "validateLoginUsernameValidation": "You can only enter 7-20 characters of Latin letters, numbers and special characters.",
+  "@validateLoginUsernameValidation": {
+    "description": "Validate login username validation"
+  },
+  "validateLoginUsernameDescription": "By entering the child’s login username, we will verify that account.",
+  "@validateLoginUsernameDescription": {
+    "description": "Validate login username description"
+  },
+  "validateContractApprove": "Approve",
+  "@validateContractApprove": {
+    "description": "Validate contract approve"
+  },
+  "validateContractReject": "Reject",
+  "@validateContractReject": {
+    "description": "Validate contract reject"
+  },
+  "validateSuccessTitle": "Succeed",
+  "@validateSuccessTitle": {
+    "description": "Validate success title"
+  },
+  "validateSuccessDescription": "Child's information has been successfully verified.",
+  "@validateSuccessDescription": {
+    "description": "Validate success description"
+  },
+  "validateSuccessButton": "Re-registering a child",
+  "@validateSuccessButton": {
+    "description": "Validate success button"
+  },
+  "validateSuccessButton2": "Done",
+  "@validateSuccessButton2": {
+    "description": "Validate success button"
   }
 }

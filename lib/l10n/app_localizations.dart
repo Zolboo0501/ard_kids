@@ -451,6 +451,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please enter a valid branch description.'**
   String get validateAddressBranchDescriptionError;
+
+  /// Validate login username
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a your child login username'**
+  String get validateLoginUsernameTitle;
+
+  /// Validate login username
+  ///
+  /// In en, this message translates to:
+  /// **'Login username'**
+  String get validateLoginUsername;
+
+  /// Validate login username error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid login username.'**
+  String get validateLoginUsernameError;
+
+  /// Validate login username validation
+  ///
+  /// In en, this message translates to:
+  /// **'You can only enter 7-20 characters of Latin letters, numbers and special characters.'**
+  String get validateLoginUsernameValidation;
+
+  /// Validate login username description
+  ///
+  /// In en, this message translates to:
+  /// **'By entering the child’s login username, we will verify that account.'**
+  String get validateLoginUsernameDescription;
+
+  /// Validate contract approve
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get validateContractApprove;
+
+  /// Validate contract reject
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get validateContractReject;
+
+  /// Validate success title
+  ///
+  /// In en, this message translates to:
+  /// **'Succeed'**
+  String get validateSuccessTitle;
+
+  /// Validate success description
+  ///
+  /// In en, this message translates to:
+  /// **'Child\'s information has been successfully verified.'**
+  String get validateSuccessDescription;
+
+  /// Validate success button
+  ///
+  /// In en, this message translates to:
+  /// **'Re-registering a child'**
+  String get validateSuccessButton;
+
+  /// Validate success button
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get validateSuccessButton2;
 }
 
 class _AppLocalizationsDelegate

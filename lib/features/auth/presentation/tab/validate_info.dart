@@ -122,7 +122,7 @@ class _ValidateInfoState extends State<ValidateInfo> {
               onTap: () {
                 if (_formKey.currentState!.validate() &&
                     registerInput.length == 10) {
-                  widget.onSave(1);
+                  widget.onSave(3);
                 } else {
                   setState(() {
                     showError = true;

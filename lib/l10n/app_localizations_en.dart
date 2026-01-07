@@ -199,4 +199,42 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get validateAddressBranchDescriptionError =>
       'Please enter a valid branch description.';
+
+  @override
+  String get validateLoginUsernameTitle =>
+      'Please enter a your child login username';
+
+  @override
+  String get validateLoginUsername => 'Login username';
+
+  @override
+  String get validateLoginUsernameError =>
+      'Please enter a valid login username.';
+
+  @override
+  String get validateLoginUsernameValidation =>
+      'You can only enter 7-20 characters of Latin letters, numbers and special characters.';
+
+  @override
+  String get validateLoginUsernameDescription =>
+      'By entering the child’s login username, we will verify that account.';
+
+  @override
+  String get validateContractApprove => 'Approve';
+
+  @override
+  String get validateContractReject => 'Reject';
+
+  @override
+  String get validateSuccessTitle => 'Succeed';
+
+  @override
+  String get validateSuccessDescription =>
+      'Child\'s information has been successfully verified.';
+
+  @override
+  String get validateSuccessButton => 'Re-registering a child';
+
+  @override
+  String get validateSuccessButton2 => 'Done';
 }

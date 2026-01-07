@@ -1,7 +1,6 @@
 import 'package:ard_light/components/Indicator_tab.dart';
 import 'package:ard_light/components/custom_header.dart';
 import 'package:ard_light/components/language_change.dart';
-import 'package:ard_light/features/auth/presentation/models/auth/validate_address_model.dart';
 import 'package:ard_light/features/auth/presentation/models/auth/validate_register_model.dart';
 import 'package:ard_light/features/auth/presentation/tab/card_address.dart';
 import 'package:ard_light/features/auth/presentation/tab/child_login_username.dart';
@@ -11,6 +10,7 @@ import 'package:ard_light/features/auth/presentation/tab/validate_mail.dart';
 import 'package:ard_light/features/auth/presentation/tab/validate_phone.dart';
 import 'package:ard_light/features/auth/presentation/widget/question.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ValidateChildStep extends StatefulWidget {
   ValidateChildStep({Key? key}) : super(key: key);
@@ -24,7 +24,15 @@ class _ValidateChildStepState extends State<ValidateChildStep>
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
   final _registerController = RegisterController();
-  final _addressController = ValidateAddressModel();
+  final _descriptionController = TextEditingController();
+  final Map<String, dynamic> address = {
+    "city": "",
+    "district": "",
+    "branch": "",
+    "description": "",
+  };
+  final _loginUsernameController = TextEditingController();
+
   late TabController _tabController;
   double _currentPage = 0.0;
 
@@ -48,6 +56,8 @@ class _ValidateChildStepState extends State<ValidateChildStep>
   void onSave(int step) {
     if (step < 6) {
       _tabController.animateTo(step);
+    } else {
+      GoRouter.of(context).push("/auth/success-child-step");
     }
   }
 
@@ -74,9 +84,16 @@ class _ValidateChildStepState extends State<ValidateChildStep>
             ValidateMail(onSave: onSave, controller: _emailController),
             ValidatePhone(onSave: onSave, controller: _phoneController),
             ValidateInfo(onSave: onSave, controller: _registerController),
-            CardAddress(onSave: onSave, controller: _addressController),
-            ChildLoginUsername(),
-            Contract(),
+            CardAddress(
+              onSave: onSave,
+              descriptionController: _descriptionController,
+              address: address,
+            ),
+            ChildLoginUsername(
+              onSave: onSave,
+              controller: _loginUsernameController,
+            ),
+            Contract(onSave: onSave),
           ],
         ),
       ),

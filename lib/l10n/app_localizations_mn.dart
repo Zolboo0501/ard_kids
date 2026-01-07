@@ -198,4 +198,40 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get validateAddressBranchDescriptionError =>
       'Салбарын дэлгэрэнгүй мэдээлэл оруулна уу.';
+
+  @override
+  String get validateLoginUsernameTitle => 'Хүүхдийн нэвтрэх нэр оруулна уу';
+
+  @override
+  String get validateLoginUsername => 'Нэвтрэх нэр';
+
+  @override
+  String get validateLoginUsernameError => 'Та зөв нэвтрэх нэр оруулна уу.';
+
+  @override
+  String get validateLoginUsernameValidation =>
+      'Та 7-20 тэмдэгтийн латин үсэг, тоо болон тусгай тэмдэгт оруулах боломжтой.';
+
+  @override
+  String get validateLoginUsernameDescription =>
+      'Хүүхдийн нэвтрэх нэр оруулснаар тухайн данс байгаа эсэхийг шалгах болно.';
+
+  @override
+  String get validateContractApprove => 'Зөвшөөрөх';
+
+  @override
+  String get validateContractReject => 'Татгалзах';
+
+  @override
+  String get validateSuccessTitle => 'Амжилттай';
+
+  @override
+  String get validateSuccessDescription =>
+      'Хүүхдийн мэдээлэл болон нэвтрэх нэр амжилттай баталгаажлаа';
+
+  @override
+  String get validateSuccessButton => 'Дахин хүүхэд бүртгэх';
+
+  @override
+  String get validateSuccessButton2 => 'Дуусгах';
 }

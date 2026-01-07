@@ -49,7 +49,7 @@ class _ValidatePhoneState extends State<ValidatePhone> {
             Button(
               onTap: () {
                 if (_formKey.currentState!.validate()) {
-                  widget.onSave(1);
+                  widget.onSave(2);
                 }
               },
               text: AppLocalizations.of(context)!.validate,
