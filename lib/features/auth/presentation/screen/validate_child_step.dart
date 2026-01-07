@@ -68,6 +68,7 @@ class _ValidateChildStepState extends State<ValidateChildStep>
         FocusScope.of(context).unfocus();
       },
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         appBar: CustomHeader(
           isBack: true,
           rightWidgets: [

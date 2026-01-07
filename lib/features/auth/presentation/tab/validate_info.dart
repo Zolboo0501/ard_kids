@@ -63,61 +63,82 @@ class _ValidateInfoState extends State<ValidateInfo> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TextView(
-              text: AppLocalizations.of(context)!.validateInfo,
-              fontSize: 20,
-              fontWeight: FontWeight.w700,
-            ),
-            const SizedBox(height: 25),
-            TextView(
-              text: AppLocalizations.of(context)!.validateInfoDescription,
-              fontSize: 14,
-            ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TextView(
+                      text: AppLocalizations.of(context)!.validateInfo,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                    ),
+                    const SizedBox(height: 25),
+                    TextView(
+                      text: AppLocalizations.of(
+                        context,
+                      )!.validateInfoDescription,
+                      fontSize: 14,
+                    ),
 
+                    const SizedBox(height: 20),
+
+                    Input(
+                      controller: widget.controller.familyNameController,
+                      hintText: AppLocalizations.of(
+                        context,
+                      )!.validateChildFamilyName,
+                      errorMessage: AppLocalizations.of(
+                        context,
+                      )!.validateChildFamilyNameError,
+                      label: AppLocalizations.of(
+                        context,
+                      )!.validateChildFamilyName,
+                    ),
+
+                    const SizedBox(height: 15),
+
+                    Input(
+                      controller: widget.controller.parentNameController,
+                      hintText: AppLocalizations.of(
+                        context,
+                      )!.validateChildParentName,
+                      errorMessage: AppLocalizations.of(
+                        context,
+                      )!.validateChildParentNameError,
+                      label: AppLocalizations.of(
+                        context,
+                      )!.validateChildParentName,
+                    ),
+
+                    const SizedBox(height: 15),
+
+                    Input(
+                      controller: widget.controller.nameController,
+                      hintText: AppLocalizations.of(context)!.validateChildName,
+                      errorMessage: AppLocalizations.of(
+                        context,
+                      )!.validateChildNameError,
+                      label: AppLocalizations.of(context)!.validateChildName,
+                    ),
+
+                    const SizedBox(height: 15),
+
+                    Registerinput(
+                      registerInput: registerInput,
+                      onChange: onChange,
+                      showError: showError,
+                      errorMessage: showError && registerInput.length < 10
+                          ? AppLocalizations.of(
+                              context,
+                            )!.validateRegisterHintError
+                          : null,
+                    ),
+                  ],
+                ),
+              ),
+            ),
             const SizedBox(height: 20),
-
-            Input(
-              controller: widget.controller.familyNameController,
-              hintText: AppLocalizations.of(context)!.validateChildFamilyName,
-              errorMessage: AppLocalizations.of(
-                context,
-              )!.validateChildFamilyNameError,
-              label: AppLocalizations.of(context)!.validateChildFamilyName,
-            ),
-
-            const SizedBox(height: 15),
-
-            Input(
-              controller: widget.controller.parentNameController,
-              hintText: AppLocalizations.of(context)!.validateChildParentName,
-              errorMessage: AppLocalizations.of(
-                context,
-              )!.validateChildParentNameError,
-              label: AppLocalizations.of(context)!.validateChildParentName,
-            ),
-
-            const SizedBox(height: 15),
-
-            Input(
-              controller: widget.controller.nameController,
-              hintText: AppLocalizations.of(context)!.validateChildName,
-              errorMessage: AppLocalizations.of(
-                context,
-              )!.validateChildNameError,
-              label: AppLocalizations.of(context)!.validateChildName,
-            ),
-
-            const SizedBox(height: 15),
-
-            Registerinput(
-              registerInput: registerInput,
-              onChange: onChange,
-              showError: showError,
-              errorMessage: showError && registerInput.length < 10
-                  ? AppLocalizations.of(context)!.validateRegisterHintError
-                  : null,
-            ),
-            Spacer(),
             Button(
               onTap: () {
                 if (_formKey.currentState!.validate() &&
