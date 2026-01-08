@@ -12,7 +12,7 @@ class Child extends StatelessWidget {
   Widget build(BuildContext context) {
     return TouchableOpacity(
       onTap: () {
-        GoRouter.of(context).go('/auth/registerChildrenStep');
+        GoRouter.of(context).go('/auth/register-child-step');
       },
       child: Container(
         decoration: BoxDecoration(

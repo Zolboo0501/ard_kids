@@ -12,7 +12,9 @@ class Input extends StatefulWidget {
   final bool? isPhone;
   final bool? enabled;
   final bool? error;
+  final double? height;
   final FormFieldValidator<String>? validator;
+  final bool? isPassword;
   const Input({
     super.key,
     required this.controller,
@@ -25,6 +27,8 @@ class Input extends StatefulWidget {
     this.enabled,
     this.error,
     this.validator,
+    this.height,
+    this.isPassword,
   });
 
   @override
@@ -32,6 +36,8 @@ class Input extends StatefulWidget {
 }
 
 class _InputState extends State<Input> {
+  bool _isPasswordVisible = true;
+
   @override
   void initState() {
     super.initState();
@@ -50,6 +56,7 @@ class _InputState extends State<Input> {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: widget.controller,
+      obscureText: widget.isPassword == true ? !_isPasswordVisible : false,
       keyboardType: widget.isPhone == true
           ? TextInputType.number
           : TextInputType.text,
@@ -63,13 +70,7 @@ class _InputState extends State<Input> {
         fontWeight: FontWeight.w500,
       ),
       decoration: InputDecoration(
-        label: widget.label != null && widget.controller.text.isNotEmpty
-            ? TextView(
-                text: widget.label!,
-                fontSize: 14,
-                fontWeight: FontWeight.w300,
-              )
-            : null,
+        labelText: widget.label,
         hintText: widget.hintText,
         filled: widget.filled,
         fillColor: widget.enabled == false
@@ -118,6 +119,31 @@ class _InputState extends State<Input> {
         ),
         errorText: widget.error == true ? '' : null,
         counterText: widget.isPhone == true ? "" : null,
+        suffixIcon: widget.isPassword == true
+            ? _isPasswordVisible
+                  ? GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _isPasswordVisible = false;
+                        });
+                      },
+                      child: Icon(
+                        Icons.visibility,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                    )
+                  : GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _isPasswordVisible = true;
+                        });
+                      },
+                      child: Icon(
+                        Icons.visibility_off,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                    )
+            : null,
       ),
       validator:
           widget.validator ??

@@ -279,5 +279,77 @@
   "validateSuccessButton2": "Дуусгах",
   "@validateSuccessButton2": {
     "description": "Validate success button"
+  },
+  "signUpPhone": "Гар утасны дугаар",
+  "@signUpPhone": {
+    "description": "Sign up phone"
+  },
+  "signUpPhoneDescription": "Та өөрийн нэр дээрх утасны дугаараа оруулна уу",
+  "@signUpPhoneDescription": {
+    "description": "Sign up phone description"
+  },
+  "signUpPhoneError": "Та утасны дугаар оруулна уу.",
+  "@signUpPhoneError": {
+    "description": "Sign up phone error"
+  },
+  "buttonContinue": "Үргэлжлүүлэх",
+  "@buttonContinue": {
+    "description": "Button continue"
+  },
+  "setupPasswordError": "Нууц үг оруулна уу",
+  "@setupPasswordError": {
+    "description": "Setup password error"
+  },
+  "setupPasswordRepeatError": "Нууц үг давтах оруулна уу",
+  "@setupPasswordRepeatError": {
+    "description": "Setup password repeat error"
+  },
+  "setupPasswordTitle": "Нэвтрэх нууц үг үүсгэх",
+  "@setupPasswordTitle": {
+    "description": "Setup password title"
+  },
+  "setupPassword": "Нууц үг",
+  "@setupPassword": {
+    "description": "Setup password"
+  },
+  "setupPasswordRepeat": "Нууц үгээ давтах",
+  "@setupPasswordRepeat": {
+    "description": "Setup password repeat"
+  },
+  "setupPasswordValidation": "Нууц үг нь дараах шаардлагыг хангасан байна:",
+  "@setupPasswordValidation": {
+    "description": "Setup password validation"
+  },
+  "setupPasswordCondition": "8 ба түүнээс дээш тэмдэгт ашиглах.",
+  "@setupPasswordCondition": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition2": "Том үсэг ашиглах.",
+  "@setupPasswordCondition2": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition3": "Жижиг үсэг ашиглах.",
+  "@setupPasswordCondition3": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition4": "Тоо ашиглах.",
+  "@setupPasswordCondition4": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition5": "Тусгай тэмдэгт ашиглах",
+  "@setupPasswordCondition5": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition6": "Нууц үг ба давтах нууц үг нь адилхан байх",
+  "@setupPasswordCondition6": {
+    "description": "Set up password condition"
+  },
+  "invitationCodeTitle": "Таныг урьсан хүний кодыг  оруулна уу?",
+  "@invitationCodeTitle": {
+    "description": "Invitation code title"
+  },
+  "invitationCodeInput": "Таныг урьсан хүний код",
+  "@invitationCodeInput": {
+    "description": "Invitation code input"
   }
 }

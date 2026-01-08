@@ -517,6 +517,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Done'**
   String get validateSuccessButton2;
+
+  /// Sign up phone
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get signUpPhone;
+
+  /// Sign up phone description
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your phone number to receive a verification code.'**
+  String get signUpPhoneDescription;
+
+  /// Sign up phone error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid phone number.'**
+  String get signUpPhoneError;
+
+  /// Button continue
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get buttonContinue;
+
+  /// Setup password error
+  ///
+  /// In en, this message translates to:
+  /// **'Password is required'**
+  String get setupPasswordError;
+
+  /// Setup password repeat error
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password is required'**
+  String get setupPasswordRepeatError;
+
+  /// Setup password title
+  ///
+  /// In en, this message translates to:
+  /// **'Create login password'**
+  String get setupPasswordTitle;
+
+  /// Setup password
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get setupPassword;
+
+  /// Setup password repeat
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat password'**
+  String get setupPasswordRepeat;
+
+  /// Setup password validation
+  ///
+  /// In en, this message translates to:
+  /// **'The password must meet the following requirements:'**
+  String get setupPasswordValidation;
+
+  /// Set up password condition
+  ///
+  /// In en, this message translates to:
+  /// **'Use 8 or more characters.'**
+  String get setupPasswordCondition;
+
+  /// Set up password condition
+  ///
+  /// In en, this message translates to:
+  /// **'Use uppercase letters.'**
+  String get setupPasswordCondition2;
+
+  /// Set up password condition
+  ///
+  /// In en, this message translates to:
+  /// **'Use lowercase letters.'**
+  String get setupPasswordCondition3;
+
+  /// Set up password condition
+  ///
+  /// In en, this message translates to:
+  /// **'Use numbers.'**
+  String get setupPasswordCondition4;
+
+  /// Set up password condition
+  ///
+  /// In en, this message translates to:
+  /// **'Use special characters.'**
+  String get setupPasswordCondition5;
+
+  /// Set up password condition
+  ///
+  /// In en, this message translates to:
+  /// **'Password and repeat password same or not.'**
+  String get setupPasswordCondition6;
+
+  /// Invitation code title
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the referral code of the person who invited you.'**
+  String get invitationCodeTitle;
+
+  /// Invitation code input
+  ///
+  /// In en, this message translates to:
+  /// **'Referral code'**
+  String get invitationCodeInput;
 }
 
 class _AppLocalizationsDelegate

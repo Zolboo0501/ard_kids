@@ -6,8 +6,8 @@ import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class SignUp extends StatelessWidget {
-  const SignUp({Key? key}) : super(key: key);
+class DanSignUp extends StatelessWidget {
+  const DanSignUp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

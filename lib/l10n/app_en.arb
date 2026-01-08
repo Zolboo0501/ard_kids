@@ -279,5 +279,77 @@
   "validateSuccessButton2": "Done",
   "@validateSuccessButton2": {
     "description": "Validate success button"
+  },
+  "signUpPhone": "Phone number",
+  "@signUpPhone": {
+    "description": "Sign up phone"
+  },
+  "signUpPhoneDescription": "Enter your phone number to receive a verification code.",
+  "@signUpPhoneDescription": {
+    "description": "Sign up phone description"
+  },
+  "signUpPhoneError": "Please enter a valid phone number.",
+  "@signUpPhoneError": {
+    "description": "Sign up phone error"
+  },
+  "buttonContinue": "Continue",
+  "@buttonContinue": {
+    "description": "Button continue"
+  },
+  "setupPasswordError": "Password is required",
+  "@setupPasswordError": {
+    "description": "Setup password error"
+  },
+  "setupPasswordRepeatError": "Confirm password is required",
+  "@setupPasswordRepeatError": {
+    "description": "Setup password repeat error"
+  },
+  "setupPasswordTitle": "Create login password",
+  "@setupPasswordTitle": {
+    "description": "Setup password title"
+  },
+  "setupPassword": "Password",
+  "@setupPassword": {
+    "description": "Setup password"
+  },
+  "setupPasswordRepeat": "Repeat password",
+  "@setupPasswordRepeat": {
+    "description": "Setup password repeat"
+  },
+  "setupPasswordValidation": "The password must meet the following requirements:",
+  "@setupPasswordValidation": {
+    "description": "Setup password validation"
+  },
+  "setupPasswordCondition": "Use 8 or more characters.",
+  "@setupPasswordCondition": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition2": "Use uppercase letters.",
+  "@setupPasswordCondition2": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition3": "Use lowercase letters.",
+  "@setupPasswordCondition3": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition4": "Use numbers.",
+  "@setupPasswordCondition4": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition5": "Use special characters.",
+  "@setupPasswordCondition5": {
+    "description": "Set up password condition"
+  },
+  "setupPasswordCondition6": "Password and repeat password same or not.",
+  "@setupPasswordCondition6": {
+    "description": "Set up password condition"
+  },
+  "invitationCodeTitle": "Please enter the referral code of the person who invited you.",
+  "@invitationCodeTitle": {
+    "description": "Invitation code title"
+  },
+  "invitationCodeInput": "Referral code",
+  "@invitationCodeInput": {
+    "description": "Invitation code input"
   }
 }

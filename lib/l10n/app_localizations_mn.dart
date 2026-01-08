@@ -234,4 +234,61 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get validateSuccessButton2 => 'Дуусгах';
+
+  @override
+  String get signUpPhone => 'Гар утасны дугаар';
+
+  @override
+  String get signUpPhoneDescription =>
+      'Та өөрийн нэр дээрх утасны дугаараа оруулна уу';
+
+  @override
+  String get signUpPhoneError => 'Та утасны дугаар оруулна уу.';
+
+  @override
+  String get buttonContinue => 'Үргэлжлүүлэх';
+
+  @override
+  String get setupPasswordError => 'Нууц үг оруулна уу';
+
+  @override
+  String get setupPasswordRepeatError => 'Нууц үг давтах оруулна уу';
+
+  @override
+  String get setupPasswordTitle => 'Нэвтрэх нууц үг үүсгэх';
+
+  @override
+  String get setupPassword => 'Нууц үг';
+
+  @override
+  String get setupPasswordRepeat => 'Нууц үгээ давтах';
+
+  @override
+  String get setupPasswordValidation =>
+      'Нууц үг нь дараах шаардлагыг хангасан байна:';
+
+  @override
+  String get setupPasswordCondition => '8 ба түүнээс дээш тэмдэгт ашиглах.';
+
+  @override
+  String get setupPasswordCondition2 => 'Том үсэг ашиглах.';
+
+  @override
+  String get setupPasswordCondition3 => 'Жижиг үсэг ашиглах.';
+
+  @override
+  String get setupPasswordCondition4 => 'Тоо ашиглах.';
+
+  @override
+  String get setupPasswordCondition5 => 'Тусгай тэмдэгт ашиглах';
+
+  @override
+  String get setupPasswordCondition6 =>
+      'Нууц үг ба давтах нууц үг нь адилхан байх';
+
+  @override
+  String get invitationCodeTitle => 'Таныг урьсан хүний кодыг  оруулна уу?';
+
+  @override
+  String get invitationCodeInput => 'Таныг урьсан хүний код';
 }

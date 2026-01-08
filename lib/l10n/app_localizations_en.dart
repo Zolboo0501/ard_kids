@@ -237,4 +237,62 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get validateSuccessButton2 => 'Done';
+
+  @override
+  String get signUpPhone => 'Phone number';
+
+  @override
+  String get signUpPhoneDescription =>
+      'Enter your phone number to receive a verification code.';
+
+  @override
+  String get signUpPhoneError => 'Please enter a valid phone number.';
+
+  @override
+  String get buttonContinue => 'Continue';
+
+  @override
+  String get setupPasswordError => 'Password is required';
+
+  @override
+  String get setupPasswordRepeatError => 'Confirm password is required';
+
+  @override
+  String get setupPasswordTitle => 'Create login password';
+
+  @override
+  String get setupPassword => 'Password';
+
+  @override
+  String get setupPasswordRepeat => 'Repeat password';
+
+  @override
+  String get setupPasswordValidation =>
+      'The password must meet the following requirements:';
+
+  @override
+  String get setupPasswordCondition => 'Use 8 or more characters.';
+
+  @override
+  String get setupPasswordCondition2 => 'Use uppercase letters.';
+
+  @override
+  String get setupPasswordCondition3 => 'Use lowercase letters.';
+
+  @override
+  String get setupPasswordCondition4 => 'Use numbers.';
+
+  @override
+  String get setupPasswordCondition5 => 'Use special characters.';
+
+  @override
+  String get setupPasswordCondition6 =>
+      'Password and repeat password same or not.';
+
+  @override
+  String get invitationCodeTitle =>
+      'Please enter the referral code of the person who invited you.';
+
+  @override
+  String get invitationCodeInput => 'Referral code';
 }

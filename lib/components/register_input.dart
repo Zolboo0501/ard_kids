@@ -149,7 +149,9 @@ class _RegisterinputState extends State<Registerinput> {
             ),
           ],
         ),
-        if (widget.errorMessage != null && widget.errorMessage!.isNotEmpty)
+        if (widget.showError &&
+            widget.errorMessage != null &&
+            widget.errorMessage!.isNotEmpty)
           Padding(
             padding: EdgeInsets.only(left: 15),
             child: TextView(
