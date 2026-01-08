@@ -85,7 +85,7 @@ class DanSignUp extends StatelessWidget {
                                     Navigator.pop(context);
                                     GoRouter.of(
                                       context,
-                                    ).push('/auth/registerChildren');
+                                    ).push('/auth/register-children');
                                   },
                                   color: Theme.of(context).colorScheme.primary,
                                   text: AppLocalizations.of(

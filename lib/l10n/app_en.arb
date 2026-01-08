@@ -284,6 +284,10 @@
   "@signUpPhone": {
     "description": "Sign up phone"
   },
+  "signUpPhoneInputHint": "Enter your phone number",
+  "@signUpPhoneInputHint": {
+    "description": "Sign up phone input hint"
+  },
   "signUpPhoneDescription": "Enter your phone number to receive a verification code.",
   "@signUpPhoneDescription": {
     "description": "Sign up phone description"
@@ -314,6 +318,14 @@
   },
   "setupPasswordRepeat": "Repeat password",
   "@setupPasswordRepeat": {
+    "description": "Setup password repeat"
+  },
+  "setupPasswordHint": "Enter password",
+  "@setupPasswordHint": {
+    "description": "Setup password hint"
+  },
+  "setupPasswordRepeatHint": "Enter password again",
+  "@setupPasswordRepeatHint": {
     "description": "Setup password repeat"
   },
   "setupPasswordValidation": "The password must meet the following requirements:",
@@ -351,5 +363,45 @@
   "invitationCodeInput": "Referral code",
   "@invitationCodeInput": {
     "description": "Invitation code input"
+  },
+  "otpVerifyTitle": "Verify OTP",
+  "@otpVerifyTitle": {
+    "description": "Otp verify title"
+  },
+  "otpVerifyDescription": "We sent a verification code to your {value} verify 4 digits code and confirm your identity.",
+  "@otpVerifyDescription": {
+    "description": "Otp verify description",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "88888888"
+      }
+    }
+  },
+  "otpVerifyTime": "Time {time}",
+  "@otpVerifyTime": {
+    "description": "Otp verify time",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "12:00"
+      }
+    }
+  },
+  "otpVerificationError": "Verification code is wrong or expired.",
+  "@otpVerificationError": {
+    "description": "Otp verification error"
+  },
+  "otpMinutes": "min",
+  "@otpMinutes": {
+    "description": "Otp minutes"
+  },
+  "otpSeconds": "sec",
+  "@otpSeconds": {
+    "description": "Otp seconds"
+  },
+  "otpResend": "Resend",
+  "@otpResend": {
+    "description": "Otp resend"
   }
 }

@@ -242,6 +242,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signUpPhone => 'Phone number';
 
   @override
+  String get signUpPhoneInputHint => 'Enter your phone number';
+
+  @override
   String get signUpPhoneDescription =>
       'Enter your phone number to receive a verification code.';
 
@@ -265,6 +268,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get setupPasswordRepeat => 'Repeat password';
+
+  @override
+  String get setupPasswordHint => 'Enter password';
+
+  @override
+  String get setupPasswordRepeatHint => 'Enter password again';
 
   @override
   String get setupPasswordValidation =>
@@ -295,4 +304,29 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get invitationCodeInput => 'Referral code';
+
+  @override
+  String get otpVerifyTitle => 'Verify OTP';
+
+  @override
+  String otpVerifyDescription(String value) {
+    return 'We sent a verification code to your $value verify 4 digits code and confirm your identity.';
+  }
+
+  @override
+  String otpVerifyTime(String time) {
+    return 'Time $time';
+  }
+
+  @override
+  String get otpVerificationError => 'Verification code is wrong or expired.';
+
+  @override
+  String get otpMinutes => 'min';
+
+  @override
+  String get otpSeconds => 'sec';
+
+  @override
+  String get otpResend => 'Resend';
 }

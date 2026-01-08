@@ -115,9 +115,12 @@ class _SignUpState extends State<SignUp> {
                         Expanded(
                           child: Input(
                             controller: phoneController,
-                            hintText: AppLocalizations.of(context)!.signUpPhone,
+                            hintText: AppLocalizations.of(
+                              context,
+                            )!.signUpPhoneInputHint,
                             error: showError,
                             isPhone: true,
+                            label: AppLocalizations.of(context)!.signUpPhone,
                           ),
                         ),
                       ],
@@ -137,12 +140,14 @@ class _SignUpState extends State<SignUp> {
                 Button(
                   text: AppLocalizations.of(context)!.buttonContinue,
                   onTap: () {
-                    if (phoneController.text.isEmpty && country.isEmpty) {
+                    if (phoneController.text.isEmpty ||
+                        country.isEmpty ||
+                        phoneController.text.length < 8) {
                       setState(() {
                         showError = true;
                       });
                     } else {
-                      GoRouter.of(context).push('/auth/setup-password');
+                      GoRouter.of(context).push('/auth/otp');
                     }
                   },
                 ),

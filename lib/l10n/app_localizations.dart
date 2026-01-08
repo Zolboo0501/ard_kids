@@ -524,6 +524,12 @@ abstract class AppLocalizations {
   /// **'Phone number'**
   String get signUpPhone;
 
+  /// Sign up phone input hint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your phone number'**
+  String get signUpPhoneInputHint;
+
   /// Sign up phone description
   ///
   /// In en, this message translates to:
@@ -571,6 +577,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Repeat password'**
   String get setupPasswordRepeat;
+
+  /// Setup password hint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter password'**
+  String get setupPasswordHint;
+
+  /// Setup password repeat
+  ///
+  /// In en, this message translates to:
+  /// **'Enter password again'**
+  String get setupPasswordRepeatHint;
 
   /// Setup password validation
   ///
@@ -625,6 +643,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Referral code'**
   String get invitationCodeInput;
+
+  /// Otp verify title
+  ///
+  /// In en, this message translates to:
+  /// **'Verify OTP'**
+  String get otpVerifyTitle;
+
+  /// Otp verify description
+  ///
+  /// In en, this message translates to:
+  /// **'We sent a verification code to your {value} verify 4 digits code and confirm your identity.'**
+  String otpVerifyDescription(String value);
+
+  /// Otp verify time
+  ///
+  /// In en, this message translates to:
+  /// **'Time {time}'**
+  String otpVerifyTime(String time);
+
+  /// Otp verification error
+  ///
+  /// In en, this message translates to:
+  /// **'Verification code is wrong or expired.'**
+  String get otpVerificationError;
+
+  /// Otp minutes
+  ///
+  /// In en, this message translates to:
+  /// **'min'**
+  String get otpMinutes;
+
+  /// Otp seconds
+  ///
+  /// In en, this message translates to:
+  /// **'sec'**
+  String get otpSeconds;
+
+  /// Otp resend
+  ///
+  /// In en, this message translates to:
+  /// **'Resend'**
+  String get otpResend;
 }
 
 class _AppLocalizationsDelegate

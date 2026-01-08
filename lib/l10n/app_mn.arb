@@ -280,9 +280,13 @@
   "@validateSuccessButton2": {
     "description": "Validate success button"
   },
-  "signUpPhone": "Гар утасны дугаар",
+  "signUpPhone": "Утасны дугаар",
   "@signUpPhone": {
     "description": "Sign up phone"
+  },
+  "signUpPhoneInputHint": "Утасны дугаар оруулна уу",
+  "@signUpPhoneInputHint": {
+    "description": "Sign up phone input hint"
   },
   "signUpPhoneDescription": "Та өөрийн нэр дээрх утасны дугаараа оруулна уу",
   "@signUpPhoneDescription": {
@@ -312,9 +316,17 @@
   "@setupPassword": {
     "description": "Setup password"
   },
-  "setupPasswordRepeat": "Нууц үгээ давтах",
+  "setupPasswordRepeat": "Нууц үг давтах",
   "@setupPasswordRepeat": {
     "description": "Setup password repeat"
+  },
+  "setupPasswordHint": "Нууц үг оруулна уу",
+  "@setupPasswordHint": {
+    "description": "Setup password hint"
+  },
+  "setupPasswordRepeatHint": "Нууц үг давтах оруулна уу",
+  "@setupPasswordRepeatHint": {
+    "description": "Setup password repeat hint"
   },
   "setupPasswordValidation": "Нууц үг нь дараах шаардлагыг хангасан байна:",
   "@setupPasswordValidation": {
@@ -351,5 +363,45 @@
   "invitationCodeInput": "Таныг урьсан хүний код",
   "@invitationCodeInput": {
     "description": "Invitation code input"
+  },
+  "otpVerifyTitle": "Баталгаажуулах код",
+  "@otpVerifyTitle": {
+    "description": "Otp verify title"
+  },
+  "otpVerifyDescription": "Таны {value} дугаарт илгээсэн 4 орон бүхий 1 удаагийн нууц дугаарыг оруулна уу",
+  "@otpVerifyDescription": {
+    "description": "Otp verify description",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "88888888"
+      }
+    }
+  },
+  "otpVerifyTime": "Хугацаа {time}",
+  "@otpVerifyTime": {
+    "description": "Otp verify time",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "12:00"
+      }
+    }
+  },
+  "otpVerificationError": "Баталгаажуулах код буруу эсвэл хугацаа хэтэрсэн байна.",
+  "@otpVerificationError": {
+    "description": "Otp verification error"
+  },
+  "otpMinutes": "мин",
+  "@otpMinutes": {
+    "description": "Otp minutes"
+  },
+  "otpSeconds": "сек",
+  "@otpSeconds": {
+    "description": "Otp seconds"
+  },
+  "otpResend": "Баталгаажуулах код илгээх",
+  "@otpResend": {
+    "description": "Otp resend"
   }
 }

@@ -236,7 +236,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get validateSuccessButton2 => 'Дуусгах';
 
   @override
-  String get signUpPhone => 'Гар утасны дугаар';
+  String get signUpPhone => 'Утасны дугаар';
+
+  @override
+  String get signUpPhoneInputHint => 'Утасны дугаар оруулна уу';
 
   @override
   String get signUpPhoneDescription =>
@@ -261,7 +264,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get setupPassword => 'Нууц үг';
 
   @override
-  String get setupPasswordRepeat => 'Нууц үгээ давтах';
+  String get setupPasswordRepeat => 'Нууц үг давтах';
+
+  @override
+  String get setupPasswordHint => 'Нууц үг оруулна уу';
+
+  @override
+  String get setupPasswordRepeatHint => 'Нууц үг давтах оруулна уу';
 
   @override
   String get setupPasswordValidation =>
@@ -291,4 +300,30 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get invitationCodeInput => 'Таныг урьсан хүний код';
+
+  @override
+  String get otpVerifyTitle => 'Баталгаажуулах код';
+
+  @override
+  String otpVerifyDescription(String value) {
+    return 'Таны $value дугаарт илгээсэн 4 орон бүхий 1 удаагийн нууц дугаарыг оруулна уу';
+  }
+
+  @override
+  String otpVerifyTime(String time) {
+    return 'Хугацаа $time';
+  }
+
+  @override
+  String get otpVerificationError =>
+      'Баталгаажуулах код буруу эсвэл хугацаа хэтэрсэн байна.';
+
+  @override
+  String get otpMinutes => 'мин';
+
+  @override
+  String get otpSeconds => 'сек';
+
+  @override
+  String get otpResend => 'Баталгаажуулах код илгээх';
 }

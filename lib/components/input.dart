@@ -36,7 +36,7 @@ class Input extends StatefulWidget {
 }
 
 class _InputState extends State<Input> {
-  bool _isPasswordVisible = true;
+  bool _isPasswordVisible = false;
 
   @override
   void initState() {
@@ -71,6 +71,10 @@ class _InputState extends State<Input> {
       ),
       decoration: InputDecoration(
         labelText: widget.label,
+        labelStyle: TextStyle(
+          color: Theme.of(context).hintColor,
+          fontWeight: FontWeight.w500,
+        ),
         hintText: widget.hintText,
         filled: widget.filled,
         fillColor: widget.enabled == false

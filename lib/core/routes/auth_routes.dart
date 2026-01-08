@@ -1,4 +1,5 @@
 import 'package:ard_light/features/auth/presentation/screen/invitation_code.dart';
+import 'package:ard_light/features/auth/presentation/screen/otp.dart';
 import 'package:ard_light/features/auth/presentation/screen/register_children.dart';
 import 'package:ard_light/features/auth/presentation/screen/register_children_step.dart';
 import 'package:ard_light/features/auth/presentation/screen/setup_password.dart';
@@ -20,7 +21,7 @@ class AuthRoutes {
       GoRoute(path: '/signUp', builder: (context, state) => SignUp()),
       GoRoute(path: '/danSignUp', builder: (context, state) => DanSignUp()),
       GoRoute(
-        path: '/registerChildren',
+        path: '/register-children',
         builder: (context, state) => RegisterChildren(),
       ),
       GoRoute(
@@ -29,7 +30,7 @@ class AuthRoutes {
       ),
       GoRoute(path: '/question', builder: (context, state) => Question()),
       GoRoute(
-        path: '/validateChild',
+        path: '/validate-child',
         builder: (context, state) => ValidateChildStep(),
       ),
       GoRoute(
@@ -40,10 +41,8 @@ class AuthRoutes {
         path: '/setup-password',
         builder: (context, state) => SetupPassword(),
       ),
-      GoRoute(
-        path: '/setup-password',
-        builder: (context, state) => SetupPassword(),
-      ),
+
+      GoRoute(path: '/otp', builder: (context, state) => Otp()),
       GoRoute(
         path: '/invitation-code',
         builder: (context, state) => InvitationCode(),

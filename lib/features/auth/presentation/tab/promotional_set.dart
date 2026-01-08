@@ -83,7 +83,7 @@ class _PromotionalSetState extends State<PromotionalSet> {
           Spacer(),
           Button(
             onTap: () {
-              GoRouter.of(context).push('/auth/validateChild');
+              GoRouter.of(context).push('/auth/validate-child');
             },
             text: AppLocalizations.of(context)!.buyPromotionalSet,
           ),

@@ -112,7 +112,8 @@ class _SetupPasswordState extends State<SetupPassword> {
                             controller: passwordController,
                             hintText: AppLocalizations.of(
                               context,
-                            )!.setupPassword,
+                            )!.setupPasswordHint,
+                            label: AppLocalizations.of(context)!.setupPassword,
                             isPassword: true,
                             validator: (value) {
                               if (value == null || value.isEmpty) {
@@ -130,6 +131,9 @@ class _SetupPasswordState extends State<SetupPassword> {
                           Input(
                             controller: confirmPasswordController,
                             hintText: AppLocalizations.of(
+                              context,
+                            )!.setupPasswordRepeatHint,
+                            label: AppLocalizations.of(
                               context,
                             )!.setupPasswordRepeat,
                             isPassword: true,

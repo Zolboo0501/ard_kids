@@ -7,7 +7,7 @@ class TextView extends StatelessWidget {
   final FontWeight? fontWeight;
   final Color? color;
   final TextAlign? textAlign;
-
+  final bool isUnderline;
   const TextView({
     super.key,
     required this.text,
@@ -15,6 +15,7 @@ class TextView extends StatelessWidget {
     this.fontWeight,
     this.color,
     this.textAlign,
+    this.isUnderline = false,
   });
 
   @override
@@ -27,6 +28,12 @@ class TextView extends StatelessWidget {
           fontSize: fontSize ?? 16,
           fontWeight: fontWeight ?? FontWeight.w400,
           color: color ?? Theme.of(context).colorScheme.primary,
+          decoration: isUnderline
+              ? TextDecoration.underline
+              : TextDecoration.none,
+          decorationColor: isUnderline
+              ? color ?? Theme.of(context).colorScheme.primary
+              : null,
         ),
       ),
     );
