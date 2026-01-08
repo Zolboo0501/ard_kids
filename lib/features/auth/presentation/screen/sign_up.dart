@@ -44,8 +44,8 @@ class _SignUpState extends State<SignUp> {
           isBack: true,
           title: "",
           rightWidgets: [
-            Question(isHasMarginRight: true),
-            LanguageChange(isHasMarginRight: true),
+            Question(isHasMarginRight: true, isHasBorder: true),
+            LanguageChange(isHasMarginRight: true, isHasBorder: true),
           ],
         ),
         body: SafeArea(

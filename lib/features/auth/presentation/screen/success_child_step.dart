@@ -65,7 +65,7 @@ class SuccessChildStep extends StatelessWidget {
               children: [
                 Button(
                   onTap: () {
-                    GoRouter.of(context).go("/auth/registerChildren");
+                    GoRouter.of(context).go("/auth/register-children");
                   },
                   text: AppLocalizations.of(context)!.validateSuccessButton,
                   color: Theme.of(context).colorScheme.secondary,

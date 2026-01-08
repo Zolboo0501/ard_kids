@@ -7,7 +7,14 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
   final bool? isBack;
   final List<Widget>? rightWidgets;
-  const CustomHeader({super.key, this.title, this.isBack, this.rightWidgets});
+  final bool? isLogo;
+  const CustomHeader({
+    super.key,
+    this.title,
+    this.isBack,
+    this.rightWidgets,
+    this.isLogo,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +53,16 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
                     }
                   },
                 ),
+              ),
+            )
+          : isLogo != null
+          ? Container(
+              margin: const EdgeInsets.only(left: 15),
+              child: SvgPicture.asset(
+                'assets/icons/ARDlogo.svg',
+                width: 57,
+                height: 24,
+                fit: BoxFit.contain,
               ),
             )
           : null,

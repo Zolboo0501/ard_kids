@@ -69,8 +69,8 @@ class _OtpState extends State<Otp> {
           isBack: true,
           title: "",
           rightWidgets: [
-            Question(isHasMarginRight: true),
-            LanguageChange(isHasMarginRight: true),
+            Question(isHasMarginRight: true, isHasBorder: true),
+            LanguageChange(isHasMarginRight: true, isHasBorder: true),
           ],
         ),
         body: Padding(
