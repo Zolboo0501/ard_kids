@@ -140,7 +140,7 @@ class _OnboardState extends ConsumerState<Onboard> {
                             Expanded(
                               child: Button(
                                 onTap: () {
-                                  GoRouter.of(context).push('/auth/signUp');
+                                  GoRouter.of(context).push('/auth/signIn');
                                 },
                                 text: AppLocalizations.of(context)!.login,
                                 color: Theme.of(context).colorScheme.secondary,

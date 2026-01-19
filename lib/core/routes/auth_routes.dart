@@ -7,6 +7,7 @@ import 'package:ard_light/features/auth/presentation/screen/sign_in.dart';
 import 'package:ard_light/features/auth/presentation/screen/dan_sign_up.dart';
 import 'package:ard_light/features/auth/presentation/screen/sign_up.dart';
 import 'package:ard_light/features/auth/presentation/screen/success_child_step.dart';
+import 'package:ard_light/features/auth/presentation/screen/update_information.dart';
 import 'package:ard_light/features/auth/presentation/screen/validate_child_step.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ard_light/features/auth/presentation/screen/onboard.dart';
@@ -46,6 +47,10 @@ class AuthRoutes {
       GoRoute(
         path: '/invitation-code',
         builder: (context, state) => InvitationCode(),
+      ),
+      GoRoute(
+        path: '/update-information',
+        builder: (context, state) => UpdateInformation(),
       ),
     ],
   );

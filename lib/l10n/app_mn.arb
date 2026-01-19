@@ -356,7 +356,7 @@
   "@setupPasswordCondition6": {
     "description": "Set up password condition"
   },
-  "invitationCodeTitle": "Таныг урьсан хүний кодыг  оруулна уу?",
+  "invitationCodeTitle": "Таныг урьсан хүний кодыг оруулна уу?",
   "@invitationCodeTitle": {
     "description": "Invitation code title"
   },
@@ -403,5 +403,137 @@
   "otpResend": "Баталгаажуулах код илгээх",
   "@otpResend": {
     "description": "Otp resend"
+  },
+  "signInReset": "Нэвтрэх нэр, нууц үгээ мартсан уу?",
+  "@signInReset": {
+    "description": "Sign in reset"
+  },
+  "signInInputPhone": "Утасны дугаар",
+  "@signInInputPhone": {
+    "description": "Sign in reset description"
+  },
+  "signInInputPhoneError": "Утасны дугаар оруулна уу",
+  "@signInInputPhoneError": {
+    "description": "Sign in reset description"
+  },
+  "signInInputPassword": "Нууц үг",
+  "@signInInputPassword": {
+    "description": "Sign in reset description"
+  },
+  "signInInputPasswordError": "Нууц үг оруулна уу",
+  "@signInInputPasswordError": {
+    "description": "Sign in reset description"
+  },
+  "signInRememberMe": "Нэвтрэх нэр сануулах",
+  "@signInRememberMe": {
+    "description": "Sign in remember me"
+  },
+  "verificationDanTitle": "Мэдээлэл шалгах",
+  "@verificationDanTitle": {
+    "description": "Verification dan title"
+  },
+  "verificationDanDescription": "Монгол Улсын холбогдох хууль тогтоомжид заасны дагуу банк нь харилцагчийг танъх мэдэх ажиллагааны хүрээнд түүний банканд бүртгэлтэй мэдээллэд өөрчлөлт орсон тухай бүр мэдээллийг шинэчлэх, албан ёсны эх сурвалжаас баталгаажуулах үүрэгтэй байдаг тул таны дараах мэдээллийг e-Mongolia цахим үйлчилгээний нэгдсэн системээс шүүлүүлж, боловсруулж, ашиглаж зөвшөөрөл олгоно уу. Үүнд:",
+  "@verificationDanDescription": {
+    "description": "Verification dan description"
+  },
+  "verificationDanItem1": "Иргэний үнэмлэхний лавлагаа, мэдээлэл",
+  "@verificationDanItem1": {
+    "description": "Verification dan item 1"
+  },
+  "verificationDanItem2": "Ажил эрхлэлт, нийгмийн даатгалын мэдээлэл",
+  "@verificationDanItem2": {
+    "description": "Verification dan item 2"
+  },
+  "verificationDanItem3": "Хаягийн мэдээлэл",
+  "@verificationDanItem3": {
+    "description": "Verification dan item 3"
+  },
+  "verificationDanFooter1": "Банк нь хуульд заасанаас бусад тохиолдолд таны мэдээллийг гуравдагч этгээдэд дамжуулахгүй бөгөөд банкны дотоод системд нууцлалын шаардлага хангасан байдлаар хадгалахыг үүрээр баталж байна.",
+  "@verificationDanFooter1": {
+    "description": "Verification dan footer 1"
+  },
+  "verificationDanFooter2": "Та банканд бүртгэлтэй мэдээллээ тогтмол шинэчилснээр банкны үйлчилгээг түргэн шуурхай, цаг алдалгүй авах, өөрийн хэрэнгийг хамгаалах ач холбогдолтой.",
+  "@verificationDanFooter2": {
+    "description": "Verification dan footer 2"
+  },
+  "verificationDanApprove": "Зөвшөөрөх",
+  "@verificationDanApprove": {
+    "description": "Verification dan approve button"
+  },
+  "verificationDanReject": "Татгалзах",
+  "@verificationDanReject": {
+    "description": "Verification dan reject button"
+  },
+  "signInAreSureBiometrics": "Та царайгаа таниулах уу?",
+  "@signInAreSureBiometrics": {
+    "description": "Sign in are sure biometrics"
+  },
+  "signInAreSureBiometricsDescription": "Царайгаа таниулснаар цаашид хялбар нэвтрэх боломжтой.",
+  "@signInAreSureBiometricsDescription": {
+    "description": "Sign in are sure biometrics description"
+  },
+  "signInAreSureBiometricsSkip": "Алгасах",
+  "@signInAreSureBiometricsSkip": {
+    "description": "Sign in are sure biometrics skip"
+  },
+  "signInAreSureBiometricsConfirm": "Таниулах",
+  "@signInAreSureBiometricsConfirm": {
+    "description": "Sign in are sure biometrics confirm"
+  },
+  "faceVerificationWarning": "Гэрэл мэдрэмтгий байдлын анхааруулга",
+  "@faceVerificationWarning": {
+    "description": "Face verification warning title"
+  },
+  "faceVerificationWarningDescription": "Хүрэл гэрэл туссан газ байна. Та хүрэл гэрэл эмзэг бол болгоомжлоорой.",
+  "@faceVerificationWarningDescription": {
+    "description": "Face verification warning description"
+  },
+  "faceVerificationTitle": "Зааврын дагуу нүүр танилтыг бүрэн дуусгана уу.",
+  "@faceVerificationTitle": {
+    "description": "Face verification title"
+  },
+  "faceVerificationCorrect": "Хэрэглэгчийн нүүр хүрээнд сайн тааруу байна.",
+  "@faceVerificationCorrect": {
+    "description": "Face verification correct message"
+  },
+  "faceVerificationIncorrect": "Хэрэглэгчийн нүүр хүрээнд буруу дуусгагүй байна.",
+  "@faceVerificationIncorrect": {
+    "description": "Face verification incorrect message"
+  },
+  "faceVerificationInstruction1": "Нүүр танихд хүрээ гарч үзээгдэх зааврын дагуу нүүрээ үнэшүүлнэ үү.",
+  "@faceVerificationInstruction1": {
+    "description": "Face verification instruction 1"
+  },
+  "faceVerificationInstruction2": "Төхөөрөмжийн дэлгэцийн гэрлийг нэмнэ үү.",
+  "@faceVerificationInstruction2": {
+    "description": "Face verification instruction 2"
+  },
+  "faceVerificationInstruction3": "Та нарны шил, нүүрний маск зүүсэнгүйгээр үнэшүүлнэ үү.",
+  "@faceVerificationInstruction3": {
+    "description": "Face verification instruction 3"
+  },
+  "faceVerificationInstruction4": "Нарны шууд тусгалгүй газар нүүрээ үнэшүүлнэ үү.",
+  "@faceVerificationInstruction4": {
+    "description": "Face verification instruction 4"
+  },
+  "faceVerificationStart": "Эхлэх",
+  "@faceVerificationStart": {
+    "description": "Face verification start button"
+  },
+  "signInWelcome": "Сайн байна уу,",
+  "@signInWelcome": {
+    "description": "Sign in welcome"
+  },
+  "signInNewUser": "Нэвтрэх нэр, нууц үгээ мартсан уу?",
+  "@signInNewUser": {
+    "description": "Sign in new user"
+  },
+  "signInUpdateInformation": "Мэдээлэл шинэчлэх",
+  "@signInUpdateInformation": {
+    "description": "Sign in update information"
+  },
+  "updateInformationTitle": "ДАН системд баталгаажуулах",
+  "@updateInformationTitle": {
+    "description": "Update information title"
   }
 }

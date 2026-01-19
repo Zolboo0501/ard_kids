@@ -24,7 +24,6 @@ class Registerinput extends StatefulWidget {
 
 class _RegisterinputState extends State<Registerinput> {
   TextEditingController controller = TextEditingController();
-  final _formKey = GlobalKey<FormState>();
 
   @override
   void initState() {

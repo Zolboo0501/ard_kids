@@ -329,4 +329,117 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get otpResend => 'Resend';
+
+  @override
+  String get signInReset => 'Reset password';
+
+  @override
+  String get signInInputPhone => 'Phone number';
+
+  @override
+  String get signInInputPhoneError => 'Enter your phone number';
+
+  @override
+  String get signInInputPassword => 'Password';
+
+  @override
+  String get signInInputPasswordError => 'Enter your password';
+
+  @override
+  String get signInRememberMe => 'Remember me';
+
+  @override
+  String get verificationDanTitle => 'Verify Information';
+
+  @override
+  String get verificationDanDescription =>
+      'In accordance with the relevant laws of Mongolia, the bank is obliged to verify and update customer information registered with the bank from official sources as part of the customer identification process. Therefore, we request your permission to filter, process and use the following information from the e-Mongolia unified electronic service system. These include:';
+
+  @override
+  String get verificationDanItem1 => 'Citizen ID card information and details';
+
+  @override
+  String get verificationDanItem2 =>
+      'Employment and social insurance information';
+
+  @override
+  String get verificationDanItem3 => 'Address information';
+
+  @override
+  String get verificationDanFooter1 =>
+      'The bank guarantees that your information will not be transferred to third parties except as required by law, and will be stored in the bank\'s internal system in accordance with confidentiality requirements.';
+
+  @override
+  String get verificationDanFooter2 =>
+      'By regularly updating your information registered with the bank, you can receive banking services quickly and without delay, and protect your assets.';
+
+  @override
+  String get verificationDanApprove => 'Approve';
+
+  @override
+  String get verificationDanReject => 'Reject';
+
+  @override
+  String get signInAreSureBiometrics =>
+      'Are you sure you want to remember face id?';
+
+  @override
+  String get signInAreSureBiometricsDescription =>
+      'By enabling this option, you will be able to log in to your account using your face id.';
+
+  @override
+  String get signInAreSureBiometricsSkip => 'Skip';
+
+  @override
+  String get signInAreSureBiometricsConfirm => 'Confirm';
+
+  @override
+  String get faceVerificationWarning => 'Photosensitivity Warning';
+
+  @override
+  String get faceVerificationWarningDescription =>
+      'There is bright light present. If you are sensitive to bright light, please be cautious.';
+
+  @override
+  String get faceVerificationTitle =>
+      'Please complete face recognition according to the instructions.';
+
+  @override
+  String get faceVerificationCorrect =>
+      'User\'s face fits well within the frame.';
+
+  @override
+  String get faceVerificationIncorrect =>
+      'User\'s face does not fit properly within the frame.';
+
+  @override
+  String get faceVerificationInstruction1 =>
+      'Please show your face according to the instructions that appear during face recognition.';
+
+  @override
+  String get faceVerificationInstruction2 =>
+      'Increase the screen brightness of your device.';
+
+  @override
+  String get faceVerificationInstruction3 =>
+      'Please verify without wearing sunglasses or face mask.';
+
+  @override
+  String get faceVerificationInstruction4 =>
+      'Please verify your face in a place without direct sunlight.';
+
+  @override
+  String get faceVerificationStart => 'Start';
+
+  @override
+  String get signInWelcome => 'Welcome back';
+
+  @override
+  String get signInNewUser => 'Login with new user';
+
+  @override
+  String get signInUpdateInformation => 'Update information';
+
+  @override
+  String get updateInformationTitle => 'DAN system verification';
 }

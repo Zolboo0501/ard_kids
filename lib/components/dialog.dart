@@ -156,11 +156,23 @@ class CustomDialogState extends State<CustomDialog> {
                 children: [
                   const SizedBox(height: 12),
                   if (widget.type == "success")
-                    SvgPicture.asset('assets/icons/pop-up.svg'),
+                    SvgPicture.asset(
+                      'assets/icons/Success.svg',
+                      width: 150,
+                      height: 150,
+                    ),
                   if (widget.type == "error")
-                    SvgPicture.asset('assets/icons/pop-up-error.svg'),
+                    SvgPicture.asset(
+                      'assets/icons/Failed.svg',
+                      width: 150,
+                      height: 150,
+                    ),
                   if (widget.type == "alert")
-                    SvgPicture.asset('assets/icons/pop-up-alert.svg'),
+                    SvgPicture.asset(
+                      'assets/icons/Warning.svg',
+                      width: 150,
+                      height: 150,
+                    ),
                   const SizedBox(height: 15),
                   TextView(
                     text: widget.title,

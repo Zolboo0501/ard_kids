@@ -685,6 +685,204 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Resend'**
   String get otpResend;
+
+  /// Sign in reset
+  ///
+  /// In en, this message translates to:
+  /// **'Reset password'**
+  String get signInReset;
+
+  /// Sign in reset description
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get signInInputPhone;
+
+  /// Sign in reset description
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your phone number'**
+  String get signInInputPhoneError;
+
+  /// Sign in reset description
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get signInInputPassword;
+
+  /// Sign in reset description
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your password'**
+  String get signInInputPasswordError;
+
+  /// Sign in remember me
+  ///
+  /// In en, this message translates to:
+  /// **'Remember me'**
+  String get signInRememberMe;
+
+  /// Verification dan title
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Information'**
+  String get verificationDanTitle;
+
+  /// Verification dan description
+  ///
+  /// In en, this message translates to:
+  /// **'In accordance with the relevant laws of Mongolia, the bank is obliged to verify and update customer information registered with the bank from official sources as part of the customer identification process. Therefore, we request your permission to filter, process and use the following information from the e-Mongolia unified electronic service system. These include:'**
+  String get verificationDanDescription;
+
+  /// Verification dan item 1
+  ///
+  /// In en, this message translates to:
+  /// **'Citizen ID card information and details'**
+  String get verificationDanItem1;
+
+  /// Verification dan item 2
+  ///
+  /// In en, this message translates to:
+  /// **'Employment and social insurance information'**
+  String get verificationDanItem2;
+
+  /// Verification dan item 3
+  ///
+  /// In en, this message translates to:
+  /// **'Address information'**
+  String get verificationDanItem3;
+
+  /// Verification dan footer 1
+  ///
+  /// In en, this message translates to:
+  /// **'The bank guarantees that your information will not be transferred to third parties except as required by law, and will be stored in the bank\'s internal system in accordance with confidentiality requirements.'**
+  String get verificationDanFooter1;
+
+  /// Verification dan footer 2
+  ///
+  /// In en, this message translates to:
+  /// **'By regularly updating your information registered with the bank, you can receive banking services quickly and without delay, and protect your assets.'**
+  String get verificationDanFooter2;
+
+  /// Verification dan approve button
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get verificationDanApprove;
+
+  /// Verification dan reject button
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get verificationDanReject;
+
+  /// Sign in are sure biometrics
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to remember face id?'**
+  String get signInAreSureBiometrics;
+
+  /// Sign in are sure biometrics description
+  ///
+  /// In en, this message translates to:
+  /// **'By enabling this option, you will be able to log in to your account using your face id.'**
+  String get signInAreSureBiometricsDescription;
+
+  /// Sign in are sure biometrics skip
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get signInAreSureBiometricsSkip;
+
+  /// Sign in are sure biometrics confirm
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get signInAreSureBiometricsConfirm;
+
+  /// Face verification warning title
+  ///
+  /// In en, this message translates to:
+  /// **'Photosensitivity Warning'**
+  String get faceVerificationWarning;
+
+  /// Face verification warning description
+  ///
+  /// In en, this message translates to:
+  /// **'There is bright light present. If you are sensitive to bright light, please be cautious.'**
+  String get faceVerificationWarningDescription;
+
+  /// Face verification title
+  ///
+  /// In en, this message translates to:
+  /// **'Please complete face recognition according to the instructions.'**
+  String get faceVerificationTitle;
+
+  /// Face verification correct message
+  ///
+  /// In en, this message translates to:
+  /// **'User\'s face fits well within the frame.'**
+  String get faceVerificationCorrect;
+
+  /// Face verification incorrect message
+  ///
+  /// In en, this message translates to:
+  /// **'User\'s face does not fit properly within the frame.'**
+  String get faceVerificationIncorrect;
+
+  /// Face verification instruction 1
+  ///
+  /// In en, this message translates to:
+  /// **'Please show your face according to the instructions that appear during face recognition.'**
+  String get faceVerificationInstruction1;
+
+  /// Face verification instruction 2
+  ///
+  /// In en, this message translates to:
+  /// **'Increase the screen brightness of your device.'**
+  String get faceVerificationInstruction2;
+
+  /// Face verification instruction 3
+  ///
+  /// In en, this message translates to:
+  /// **'Please verify without wearing sunglasses or face mask.'**
+  String get faceVerificationInstruction3;
+
+  /// Face verification instruction 4
+  ///
+  /// In en, this message translates to:
+  /// **'Please verify your face in a place without direct sunlight.'**
+  String get faceVerificationInstruction4;
+
+  /// Face verification start button
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get faceVerificationStart;
+
+  /// Sign in welcome
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome back'**
+  String get signInWelcome;
+
+  /// Sign in new user
+  ///
+  /// In en, this message translates to:
+  /// **'Login with new user'**
+  String get signInNewUser;
+
+  /// Sign in update information
+  ///
+  /// In en, this message translates to:
+  /// **'Update information'**
+  String get signInUpdateInformation;
+
+  /// Update information title
+  ///
+  /// In en, this message translates to:
+  /// **'DAN system verification'**
+  String get updateInformationTitle;
 }
 
 class _AppLocalizationsDelegate

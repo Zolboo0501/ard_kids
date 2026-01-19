@@ -296,7 +296,7 @@ class AppLocalizationsMn extends AppLocalizations {
       'Нууц үг ба давтах нууц үг нь адилхан байх';
 
   @override
-  String get invitationCodeTitle => 'Таныг урьсан хүний кодыг  оруулна уу?';
+  String get invitationCodeTitle => 'Таныг урьсан хүний кодыг оруулна уу?';
 
   @override
   String get invitationCodeInput => 'Таныг урьсан хүний код';
@@ -326,4 +326,116 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get otpResend => 'Баталгаажуулах код илгээх';
+
+  @override
+  String get signInReset => 'Нэвтрэх нэр, нууц үгээ мартсан уу?';
+
+  @override
+  String get signInInputPhone => 'Утасны дугаар';
+
+  @override
+  String get signInInputPhoneError => 'Утасны дугаар оруулна уу';
+
+  @override
+  String get signInInputPassword => 'Нууц үг';
+
+  @override
+  String get signInInputPasswordError => 'Нууц үг оруулна уу';
+
+  @override
+  String get signInRememberMe => 'Нэвтрэх нэр сануулах';
+
+  @override
+  String get verificationDanTitle => 'Мэдээлэл шалгах';
+
+  @override
+  String get verificationDanDescription =>
+      'Монгол Улсын холбогдох хууль тогтоомжид заасны дагуу банк нь харилцагчийг танъх мэдэх ажиллагааны хүрээнд түүний банканд бүртгэлтэй мэдээллэд өөрчлөлт орсон тухай бүр мэдээллийг шинэчлэх, албан ёсны эх сурвалжаас баталгаажуулах үүрэгтэй байдаг тул таны дараах мэдээллийг e-Mongolia цахим үйлчилгээний нэгдсэн системээс шүүлүүлж, боловсруулж, ашиглаж зөвшөөрөл олгоно уу. Үүнд:';
+
+  @override
+  String get verificationDanItem1 => 'Иргэний үнэмлэхний лавлагаа, мэдээлэл';
+
+  @override
+  String get verificationDanItem2 =>
+      'Ажил эрхлэлт, нийгмийн даатгалын мэдээлэл';
+
+  @override
+  String get verificationDanItem3 => 'Хаягийн мэдээлэл';
+
+  @override
+  String get verificationDanFooter1 =>
+      'Банк нь хуульд заасанаас бусад тохиолдолд таны мэдээллийг гуравдагч этгээдэд дамжуулахгүй бөгөөд банкны дотоод системд нууцлалын шаардлага хангасан байдлаар хадгалахыг үүрээр баталж байна.';
+
+  @override
+  String get verificationDanFooter2 =>
+      'Та банканд бүртгэлтэй мэдээллээ тогтмол шинэчилснээр банкны үйлчилгээг түргэн шуурхай, цаг алдалгүй авах, өөрийн хэрэнгийг хамгаалах ач холбогдолтой.';
+
+  @override
+  String get verificationDanApprove => 'Зөвшөөрөх';
+
+  @override
+  String get verificationDanReject => 'Татгалзах';
+
+  @override
+  String get signInAreSureBiometrics => 'Та царайгаа таниулах уу?';
+
+  @override
+  String get signInAreSureBiometricsDescription =>
+      'Царайгаа таниулснаар цаашид хялбар нэвтрэх боломжтой.';
+
+  @override
+  String get signInAreSureBiometricsSkip => 'Алгасах';
+
+  @override
+  String get signInAreSureBiometricsConfirm => 'Таниулах';
+
+  @override
+  String get faceVerificationWarning => 'Гэрэл мэдрэмтгий байдлын анхааруулга';
+
+  @override
+  String get faceVerificationWarningDescription =>
+      'Хүрэл гэрэл туссан газ байна. Та хүрэл гэрэл эмзэг бол болгоомжлоорой.';
+
+  @override
+  String get faceVerificationTitle =>
+      'Зааврын дагуу нүүр танилтыг бүрэн дуусгана уу.';
+
+  @override
+  String get faceVerificationCorrect =>
+      'Хэрэглэгчийн нүүр хүрээнд сайн тааруу байна.';
+
+  @override
+  String get faceVerificationIncorrect =>
+      'Хэрэглэгчийн нүүр хүрээнд буруу дуусгагүй байна.';
+
+  @override
+  String get faceVerificationInstruction1 =>
+      'Нүүр танихд хүрээ гарч үзээгдэх зааврын дагуу нүүрээ үнэшүүлнэ үү.';
+
+  @override
+  String get faceVerificationInstruction2 =>
+      'Төхөөрөмжийн дэлгэцийн гэрлийг нэмнэ үү.';
+
+  @override
+  String get faceVerificationInstruction3 =>
+      'Та нарны шил, нүүрний маск зүүсэнгүйгээр үнэшүүлнэ үү.';
+
+  @override
+  String get faceVerificationInstruction4 =>
+      'Нарны шууд тусгалгүй газар нүүрээ үнэшүүлнэ үү.';
+
+  @override
+  String get faceVerificationStart => 'Эхлэх';
+
+  @override
+  String get signInWelcome => 'Сайн байна уу,';
+
+  @override
+  String get signInNewUser => 'Нэвтрэх нэр, нууц үгээ мартсан уу?';
+
+  @override
+  String get signInUpdateInformation => 'Мэдээлэл шинэчлэх';
+
+  @override
+  String get updateInformationTitle => 'ДАН системд баталгаажуулах';
 }
