@@ -431,11 +431,21 @@ class AppLocalizationsMn extends AppLocalizations {
   String get signInWelcome => 'Сайн байна уу,';
 
   @override
-  String get signInNewUser => 'Нэвтрэх нэр, нууц үгээ мартсан уу?';
+  String get signInNewUser => 'Шинэ хэрэглэчээр нэвтрэх';
 
   @override
   String get signInUpdateInformation => 'Мэдээлэл шинэчлэх';
 
   @override
   String get updateInformationTitle => 'ДАН системд баталгаажуулах';
+
+  @override
+  String get createPinTitle =>
+      'Гүйлгээ хийхэд ашиглах 4 орон бүхий нууц кодоо оруулна уу.';
+
+  @override
+  String get createPinError => '4 орон бүхий нууц код оруулна уу.';
+
+  @override
+  String get createPinSuccess => 'Гүйлгээний нууц үг амжилттай үүслээ.';
 }

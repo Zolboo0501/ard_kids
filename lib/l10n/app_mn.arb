@@ -524,7 +524,7 @@
   "@signInWelcome": {
     "description": "Sign in welcome"
   },
-  "signInNewUser": "Нэвтрэх нэр, нууц үгээ мартсан уу?",
+  "signInNewUser": "Шинэ хэрэглэчээр нэвтрэх",
   "@signInNewUser": {
     "description": "Sign in new user"
   },
