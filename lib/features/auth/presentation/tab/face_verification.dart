@@ -104,7 +104,7 @@ class _FaceVerificationState extends State<FaceVerification> {
                       border: Border.all(
                         color: Theme.of(
                           context,
-                        ).colorScheme.onSurface.withOpacity(0.2),
+                        ).colorScheme.onSurface.withValues(alpha: 51),
                       ),
                     ),
                     child: Column(
@@ -122,7 +122,7 @@ class _FaceVerificationState extends State<FaceVerification> {
                               size: 80,
                               color: Theme.of(
                                 context,
-                              ).colorScheme.onSurface.withOpacity(0.3),
+                              ).colorScheme.onSurface.withValues(alpha: 77),
                             ),
                           ),
                         ),
@@ -162,7 +162,7 @@ class _FaceVerificationState extends State<FaceVerification> {
                       border: Border.all(
                         color: Theme.of(
                           context,
-                        ).colorScheme.onSurface.withOpacity(0.2),
+                        ).colorScheme.onSurface.withValues(alpha: 51),
                       ),
                     ),
                     child: Column(
@@ -180,7 +180,7 @@ class _FaceVerificationState extends State<FaceVerification> {
                               size: 80,
                               color: Theme.of(
                                 context,
-                              ).colorScheme.onSurface.withOpacity(0.3),
+                              ).colorScheme.onSurface.withValues(alpha: 77),
                             ),
                           ),
                         ),
