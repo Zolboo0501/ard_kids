@@ -73,7 +73,9 @@ class SuccessChildStep extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Button(
-                  onTap: () {},
+                  onTap: () {
+                    GoRouter.of(context).go("/auth/create-pin");
+                  },
                   text: AppLocalizations.of(context)!.validateSuccessButton2,
                 ),
               ],
