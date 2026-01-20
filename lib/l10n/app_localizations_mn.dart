@@ -448,4 +448,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get createPinSuccess => 'Гүйлгээний нууц үг амжилттай үүслээ.';
+
+  @override
+  String get resetTitle => 'Нэвтрэх нэр, нууц үг сэргээх';
 }

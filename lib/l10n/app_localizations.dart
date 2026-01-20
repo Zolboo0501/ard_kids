@@ -901,6 +901,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Transaction code created successfully.'**
   String get createPinSuccess;
+
+  /// Reset title
+  ///
+  /// In en, this message translates to:
+  /// **'Login username, Reset password'**
+  String get resetTitle;
 }
 
 class _AppLocalizationsDelegate

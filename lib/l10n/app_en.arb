@@ -547,5 +547,9 @@
   "createPinSuccess": "Transaction code created successfully.",
   "@createPinSuccess": {
     "description": "Create pin success"
+  },
+  "resetTitle": "Login username, Reset password",
+  "@resetTitle": {
+    "description": "Reset title"
   }
 }

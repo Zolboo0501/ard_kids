@@ -14,7 +14,10 @@ class LightColors {
     onSurface: Color(0xFFE0E0E0),
   );
 
-  static const Color hintColor = Color(0xFFBDBDBD);
+  static const customColor = {
+    "hintColor": Color(0xFFBDBDBD),
+    "textSubtlest": Color(0x80000000),
+  };
 }
 
 class DarkColors {
@@ -30,5 +33,8 @@ class DarkColors {
     onSurface: Color(0xFFFFFFFF),
   );
 
-  static const Color hintColor = Color(0xFFBDBDBD);
+  static const customColor = {
+    "hintColor": Color(0xFFBDBDBD),
+    "textSubtlest": Color(0x80000000),
+  };
 }

@@ -547,5 +547,9 @@
   "createPinSuccess": "Гүйлгээний нууц үг амжилттай үүслээ.",
   "@createPinSuccess": {
     "description": "Create pin success"
+  },
+  "resetTitle": "Нэвтрэх нэр, нууц үг сэргээх",
+  "@resetTitle": {
+    "description": "Reset title"
   }
 }

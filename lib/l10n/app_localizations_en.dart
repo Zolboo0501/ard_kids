@@ -452,4 +452,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get createPinSuccess => 'Transaction code created successfully.';
+
+  @override
+  String get resetTitle => 'Login username, Reset password';
 }
