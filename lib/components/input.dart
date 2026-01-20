@@ -54,6 +54,7 @@ class _InputState extends State<Input> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      enabled: widget.enabled,
       controller: widget.controller,
       obscureText: widget.isPassword == true ? !_isPasswordVisible : false,
       keyboardType: widget.isPhone == true
