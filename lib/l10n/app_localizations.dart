@@ -883,6 +883,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'DAN system verification'**
   String get updateInformationTitle;
+
+  /// Create pin title
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your 4-digit PIN code to proceed with the transaction.'**
+  String get createPinTitle;
+
+  /// Create pin error
+  ///
+  /// In en, this message translates to:
+  /// **'4-digit PIN code wrong.'**
+  String get createPinError;
+
+  /// Create pin success
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction code created successfully.'**
+  String get createPinSuccess;
 }
 
 class _AppLocalizationsDelegate

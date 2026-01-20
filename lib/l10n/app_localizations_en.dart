@@ -442,4 +442,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get updateInformationTitle => 'DAN system verification';
+
+  @override
+  String get createPinTitle =>
+      'Please enter your 4-digit PIN code to proceed with the transaction.';
+
+  @override
+  String get createPinError => '4-digit PIN code wrong.';
+
+  @override
+  String get createPinSuccess => 'Transaction code created successfully.';
 }

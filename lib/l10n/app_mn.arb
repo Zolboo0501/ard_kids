@@ -535,5 +535,17 @@
   "updateInformationTitle": "ДАН системд баталгаажуулах",
   "@updateInformationTitle": {
     "description": "Update information title"
+  },
+  "createPinTitle": "Гүйлгээ хийхэд ашиглах 4 орон бүхий нууц кодоо оруулна уу.",
+  "@createPinTitle": {
+    "description": "Create pin title"
+  },
+  "createPinError": "4 орон бүхий нууц код оруулна уу.",
+  "@createPinError": {
+    "description": "Create pin error"
+  },
+  "createPinSuccess": "Гүйлгээний нууц үг амжилттай үүслээ.",
+  "@createPinSuccess": {
+    "description": "Create pin success"
   }
 }

@@ -5,7 +5,9 @@ import 'package:pinput/pinput.dart';
 
 class OtpInput extends StatefulWidget {
   final Function(String) onComplete;
-  OtpInput({Key? key, required this.onComplete}) : super(key: key);
+  final String? errorMessage;
+  OtpInput({Key? key, required this.onComplete, this.errorMessage})
+    : super(key: key);
 
   @override
   _OtpInputState createState() => _OtpInputState();
@@ -58,10 +60,11 @@ class _OtpInputState extends State<OtpInput> {
         color: Theme.of(context).colorScheme.error,
         fontWeight: FontWeight.w400,
       ),
-
+      errorText: widget.errorMessage,
       validator: (value) {
         if (value!.length < 4) {
-          return AppLocalizations.of(context)!.otpVerificationError;
+          return widget.errorMessage ??
+              AppLocalizations.of(context)!.otpVerificationError;
         }
         return null;
       },
