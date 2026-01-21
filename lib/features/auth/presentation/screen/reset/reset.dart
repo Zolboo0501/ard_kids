@@ -6,6 +6,7 @@ import 'package:ard_light/features/auth/presentation/widget/question.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 class Reset extends StatelessWidget {
   Reset({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class Reset extends StatelessWidget {
     {
       "icon": "assets/icons/password.svg",
       "title": "Нууц үг сэргээх",
-      "navigate": "/auth/reset_password",
+      "navigate": "/auth/reset-password-option",
     },
     {
       "icon": "assets/icons/user2.svg",
@@ -66,7 +67,12 @@ class Reset extends StatelessWidget {
                 children: [
                   for (int i = 0; i < screens.length; i++) ...[
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        final navigate = screens[i]['navigate'];
+                        if (navigate != null) {
+                          GoRouter.of(context).push(navigate);
+                        }
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white,

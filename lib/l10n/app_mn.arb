@@ -112,23 +112,23 @@
   "@buyPromotionalSet": {
     "description": "Button text for buy promotional set"
   },
-  "validateMail": "Хүүхдийн майл хаягыг оруулна уу.",
+  "validateMail": "Хүүхдийн имэйл хаягыг оруулна уу.",
   "@validateMail": {
     "description": "Screen title for validate mail"
   },
-  "validateMailDescription": "Та хүүхдийн майл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.",
+  "validateMailDescription": "Та хүүхдийн имэйл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.",
   "@validateMailDescription": {
     "description": "Screen title for validate mail"
   },
-  "validateMailInputLabel": "Хүүхдийн бүртгэлтэй майл хаяг",
+  "validateMailInputLabel": "Хүүхдийн бүртгэлтэй имэйл хаяг",
   "@validateMailInputLabel": {
     "description": "Screen title for validate mail"
   },
-  "validateMailInputHint": "Бүртгэлтэй майл хаяг",
+  "validateMailInputHint": "Бүртгэлтэй имэйл хаяг",
   "@validateMailInputHint": {
     "description": "Screen title for validate mail"
   },
-  "validateMailInputError": "Бүртгэлтэй майл хаяг оруулна уу.",
+  "validateMailInputError": "Бүртгэлтэй имэйл хаяг оруулна уу.",
   "@validateMailInputError": {
     "description": "Screen title for validate mail"
   },
@@ -551,5 +551,73 @@
   "resetTitle": "Нэвтрэх нэр, нууц үг сэргээх",
   "@resetTitle": {
     "description": "Reset title"
+  },
+  "resetPassword": "Нууц үг сэргээх хэлбэрээ сонгоно уу",
+  "@resetPassword": {
+    "description": "Reset password"
+  },
+  "resetPasswordOption": "Нууц үг сэргээх хэлбэрээ сонгоно уу",
+  "@resetPasswordOption": {
+    "description": "Reset password option"
+  },
+  "resetPasswordOptionError": "Нууц үг сэргээх хэлбэрээ сонгоно уу",
+  "@resetPasswordOptionError": {
+    "description": "Reset password error"
+  },
+  "resetPasswordEmail": "Имэйл хаяг",
+  "@resetPasswordEmail": {
+    "description": "Label for reset password option"
+  },
+  "resetPasswordPhone": "Утасны дугаар",
+  "@resetPasswordPhone": {
+    "description": "Label for reset password option"
+  },
+  "resetPasswordEmailTitle": "Та имэйл хаяг оруулна уу",
+  "@resetPasswordEmailTitle": {
+    "description": "Title for reset password with email"
+  },
+  "resetPasswordEmailDecription": "Нууц үг сэргээхэд ашиглагдах өөрийн имэйл хаягаа оруулна уу.",
+  "@resetPasswordEmailDecription": {
+    "description": "Description for reset password with email"
+  },
+  "resetPasswordEmailLabel": "Имэйл",
+  "@resetPasswordEmailLabel": {
+    "description": "Label for reset password email"
+  },
+  "resetPasswordEmailHint": "Имэйл хаягаа оруулна уу",
+  "@resetPasswordEmailHint": {
+    "description": "Hint for reset password email"
+  },
+  "resetPasswordEmailError": "Зөв имэйл хаяг оруулна уу",
+  "@resetPasswordEmailError": {
+    "description": "Error for reset password email"
+  },
+  "resetPasswordPhoneTitle": "Утасны дугаар оруулна уу",
+  "@resetPasswordPhoneTitle": {
+    "description": "Title for reset password with phone"
+  },
+  "resetPasswordPhoneDecription": "Нууц үг сэргээхэд ашиглагдах өөрийн утасны дугаараа оруулна уу.",
+  "@resetPasswordPhoneDecription": {
+    "description": "Description for reset password with phone"
+  },
+  "resetPasswordPhoneLabel": "Утасны дугаар",
+  "@resetPasswordPhoneLabel": {
+    "description": "Label for reset password phone"
+  },
+  "resetPasswordPhoneHint": "Утасны дугаараа оруулна уу",
+  "@resetPasswordPhoneHint": {
+    "description": "Hint for reset password phone"
+  },
+  "resetPasswordPhoneError": "Зөв утасны дугаар оруулна уу",
+  "@resetPasswordPhoneError": {
+    "description": "Error for reset password phone"
+  },
+  "resetPasswordSuccess": "Нууц үг амжилттай солигдлоо.",
+  "@resetPasswordSuccess": {
+    "description": "Success for reset password"
+  },
+  "buttonUnderstand": "Ойлголоо",
+  "@buttonUnderstand": {
+    "description": "Understand button"
   }
 }

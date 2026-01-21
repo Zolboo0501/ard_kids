@@ -100,20 +100,20 @@ class AppLocalizationsMn extends AppLocalizations {
   String get buyPromotionalSet => 'Багц худалдан авах';
 
   @override
-  String get validateMail => 'Хүүхдийн майл хаягыг оруулна уу.';
+  String get validateMail => 'Хүүхдийн имэйл хаягыг оруулна уу.';
 
   @override
   String get validateMailDescription =>
-      'Та хүүхдийн майл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.';
+      'Та хүүхдийн имэйл хаяг оруулснаар бид тухайн хүүхдийн хаягийг баталгаажуулах юм.';
 
   @override
-  String get validateMailInputLabel => 'Хүүхдийн бүртгэлтэй майл хаяг';
+  String get validateMailInputLabel => 'Хүүхдийн бүртгэлтэй имэйл хаяг';
 
   @override
-  String get validateMailInputHint => 'Бүртгэлтэй майл хаяг';
+  String get validateMailInputHint => 'Бүртгэлтэй имэйл хаяг';
 
   @override
-  String get validateMailInputError => 'Бүртгэлтэй майл хаяг оруулна уу.';
+  String get validateMailInputError => 'Бүртгэлтэй имэйл хаяг оруулна уу.';
 
   @override
   String get validatePhone => 'Хүүхдийн утасны дугаарыг оруулна уу.';
@@ -451,4 +451,54 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get resetTitle => 'Нэвтрэх нэр, нууц үг сэргээх';
+
+  @override
+  String get resetPasswordOption => 'Нууц үг сэргээх хэлбэрээ сонгоно уу';
+
+  @override
+  String get resetPasswordOptionError => 'Нууц үг сэргээх хэлбэрээ сонгоно уу';
+
+  @override
+  String get resetPasswordEmail => 'Имэйл хаяг';
+
+  @override
+  String get resetPasswordPhone => 'Утасны дугаар';
+
+  @override
+  String get resetPasswordEmailTitle => 'Та имэйл хаяг оруулна уу';
+
+  @override
+  String get resetPasswordEmailDecription =>
+      'Нууц үг сэргээхэд ашиглагдах өөрийн имэйл хаягаа оруулна уу.';
+
+  @override
+  String get resetPasswordEmailLabel => 'Имэйл';
+
+  @override
+  String get resetPasswordEmailHint => 'Имэйл хаягаа оруулна уу';
+
+  @override
+  String get resetPasswordEmailError => 'Зөв имэйл хаяг оруулна уу';
+
+  @override
+  String get resetPasswordPhoneTitle => 'Утасны дугаар оруулна уу';
+
+  @override
+  String get resetPasswordPhoneDecription =>
+      'Нууц үг сэргээхэд ашиглагдах өөрийн утасны дугаараа оруулна уу.';
+
+  @override
+  String get resetPasswordPhoneLabel => 'Утасны дугаар';
+
+  @override
+  String get resetPasswordPhoneHint => 'Утасны дугаараа оруулна уу';
+
+  @override
+  String get resetPasswordPhoneError => 'Зөв утасны дугаар оруулна уу';
+
+  @override
+  String get resetPasswordSuccess => 'Нууц үг амжилттай солигдлоо.';
+
+  @override
+  String get buttonUnderstand => 'Ойлголоо';
 }

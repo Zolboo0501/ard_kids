@@ -551,5 +551,69 @@
   "resetTitle": "Login username, Reset password",
   "@resetTitle": {
     "description": "Reset title"
+  },
+  "resetPasswordOption": "Choose your option for reset password",
+  "@resetPasswordOption": {
+    "description": "Reset password"
+  },
+  "resetPasswordOptionError": "Please select option for reset password",
+  "@resetPasswordOptionError": {
+    "description": "Reset password error"
+  },
+  "resetPasswordEmail": "Email",
+  "@resetPasswordEmail": {
+    "description": "Label for reset password option"
+  },
+  "resetPasswordPhone": "Phone",
+  "@resetPasswordPhone": {
+    "description": "Label for reset password option"
+  },
+  "resetPasswordEmailTitle": "Please enter your email",
+  "@resetPasswordEmailTitle": {
+    "description": "Title for reset password with email"
+  },
+  "resetPasswordEmailDecription": "Please provide the email address registered with your account in order to initiate password recovery.",
+  "@resetPasswordEmailDecription": {
+    "description": "Description for reset password with email"
+  },
+  "resetPasswordEmailLabel": "Email",
+  "@resetPasswordEmailLabel": {
+    "description": "Label for reset password email"
+  },
+  "resetPasswordEmailHint": "Please enter a email",
+  "@resetPasswordEmailHint": {
+    "description": "Hint for reset password email"
+  },
+  "resetPasswordEmailError": "Please enter a valid email",
+  "@resetPasswordEmailError": {
+    "description": "Error for reset password email"
+  },
+  "resetPasswordPhoneTitle": "Please enter your phone",
+  "@resetPasswordPhoneTitle": {
+    "description": "Title for reset password with phone"
+  },
+  "resetPasswordPhoneDecription": "Please provide the phone number registered with your account in order to initiate password recovery.",
+  "@resetPasswordPhoneDecription": {
+    "description": "Description for reset password with phone"
+  },
+  "resetPasswordPhoneLabel": "Phone",
+  "@resetPasswordPhoneLabel": {
+    "description": "Label for reset password phone"
+  },
+  "resetPasswordPhoneHint": "Please enter a phone number",
+  "@resetPasswordPhoneHint": {
+    "description": "Hint for reset password phone"
+  },
+  "resetPasswordPhoneError": "Please enter a valid phone number",
+  "@resetPasswordPhoneError": {
+    "description": "Error for reset password phone"
+  },
+  "resetPasswordSuccess": "Password reset successfully",
+  "@resetPasswordSuccess": {
+    "description": "Success for reset password"
+  },
+  "buttonUnderstand": "Understand",
+  "@buttonUnderstand": {
+    "description": "Understand button"
   }
 }

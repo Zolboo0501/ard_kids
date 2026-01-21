@@ -6,6 +6,7 @@ import 'package:ard_light/features/auth/presentation/widget/sign_biometric.dart'
 import 'package:ard_light/features/auth/presentation/widget/sign_field.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SignIn extends StatefulWidget {
   SignIn({Key? key}) : super(key: key);
@@ -71,7 +72,9 @@ class _SignInState extends State<SignIn> {
                 children: [
                   const SizedBox(height: 15),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      GoRouter.of(context).push('/auth/reset');
+                    },
                     child: Center(
                       child: TextView(
                         text: AppLocalizations.of(context)!.signInReset,

@@ -38,18 +38,16 @@ class _ValidateMailState extends State<ValidateMail> {
             const SizedBox(height: 15),
             Input(
               controller: widget.controller,
-              hintText: AppLocalizations.of(context)!.validateMailInputHint,
+              hintText: AppLocalizations.of(context)!.resetPasswordEmailHint,
               errorMessage: AppLocalizations.of(
                 context,
               )!.validateMailInputError,
-              label: AppLocalizations.of(context)!.validateMailInputLabel,
+              label: AppLocalizations.of(context)!.resetPasswordEmailLabel,
             ),
             Spacer(),
             Button(
               onTap: () {
-                if (_formKey.currentState!.validate()) {
-                  widget.onSave(1);
-                }
+                if (_formKey.currentState!.validate()) {}
               },
               text: AppLocalizations.of(context)!.validate,
             ),

@@ -4,9 +4,11 @@ import 'package:ard_light/features/auth/presentation/screen/register/otp.dart';
 import 'package:ard_light/features/auth/presentation/screen/register/register_children.dart';
 
 import 'package:ard_light/features/auth/presentation/screen/register/register_children_step.dart';
+import 'package:ard_light/features/auth/presentation/screen/reset/input_email.dart';
+import 'package:ard_light/features/auth/presentation/screen/reset/input_phone.dart';
 import 'package:ard_light/features/auth/presentation/screen/reset/reset.dart';
-import 'package:ard_light/features/auth/presentation/screen/register/setup_password.dart';
-import 'package:ard_light/features/auth/presentation/screen/reset/reset_password.dart';
+import 'package:ard_light/features/auth/presentation/screen/setup_password.dart';
+import 'package:ard_light/features/auth/presentation/screen/reset/reset_password_option.dart';
 import 'package:ard_light/features/auth/presentation/screen/sign_in.dart';
 import 'package:ard_light/features/auth/presentation/screen/register/dan_sign_up.dart';
 import 'package:ard_light/features/auth/presentation/screen/register/sign_up.dart';
@@ -54,14 +56,23 @@ class AuthRoutes {
       GoRoute(path: '/create-pin', builder: (context, state) => CreatePin()),
       GoRoute(path: '/reset', builder: (context, state) => Reset()),
       GoRoute(
-        path: '/reset-password',
-        builder: (context, state) => ResetPassword(),
+        path: '/reset-password-option',
+        builder: (context, state) => ResetPasswordOption(),
       ),
 
-      // GoRoute(
-      //   path: '/update-information',
-      //   builder: (context, state) => UpdateInformation(),
-      // ),
+      GoRoute(
+        path: '/reset-password-email',
+        builder: (context, state) => ResetInputEmail(),
+      ),
+      GoRoute(
+        path: '/reset-password-phone',
+        builder: (context, state) => ResetInputPhone(),
+      ),
+      GoRoute(
+        path: '/reset-password',
+        builder: (context, state) =>
+            SetupPassword(extra: state.extra as Map<String, dynamic>?),
+      ),
     ],
   );
 }

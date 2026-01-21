@@ -907,6 +907,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Login username, Reset password'**
   String get resetTitle;
+
+  /// Reset password
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your option for reset password'**
+  String get resetPasswordOption;
+
+  /// Reset password error
+  ///
+  /// In en, this message translates to:
+  /// **'Please select option for reset password'**
+  String get resetPasswordOptionError;
+
+  /// Label for reset password option
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get resetPasswordEmail;
+
+  /// Label for reset password option
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get resetPasswordPhone;
+
+  /// Title for reset password with email
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your email'**
+  String get resetPasswordEmailTitle;
+
+  /// Description for reset password with email
+  ///
+  /// In en, this message translates to:
+  /// **'Please provide the email address registered with your account in order to initiate password recovery.'**
+  String get resetPasswordEmailDecription;
+
+  /// Label for reset password email
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get resetPasswordEmailLabel;
+
+  /// Hint for reset password email
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a email'**
+  String get resetPasswordEmailHint;
+
+  /// Error for reset password email
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email'**
+  String get resetPasswordEmailError;
+
+  /// Title for reset password with phone
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your phone'**
+  String get resetPasswordPhoneTitle;
+
+  /// Description for reset password with phone
+  ///
+  /// In en, this message translates to:
+  /// **'Please provide the phone number registered with your account in order to initiate password recovery.'**
+  String get resetPasswordPhoneDecription;
+
+  /// Label for reset password phone
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get resetPasswordPhoneLabel;
+
+  /// Hint for reset password phone
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a phone number'**
+  String get resetPasswordPhoneHint;
+
+  /// Error for reset password phone
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid phone number'**
+  String get resetPasswordPhoneError;
+
+  /// Success for reset password
+  ///
+  /// In en, this message translates to:
+  /// **'Password reset successfully'**
+  String get resetPasswordSuccess;
+
+  /// Understand button
+  ///
+  /// In en, this message translates to:
+  /// **'Understand'**
+  String get buttonUnderstand;
 }
 
 class _AppLocalizationsDelegate

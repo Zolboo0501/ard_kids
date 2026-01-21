@@ -1,5 +1,6 @@
 import 'package:ard_light/components/button.dart';
 import 'package:ard_light/components/custom_header.dart';
+import 'package:ard_light/components/dialog.dart';
 import 'package:ard_light/components/input.dart';
 import 'package:ard_light/components/language_change.dart';
 import 'package:ard_light/components/text_view.dart';
@@ -10,13 +11,17 @@ import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
 class SetupPassword extends StatefulWidget {
-  SetupPassword({Key? key}) : super(key: key);
+  final Map<String, dynamic>? extra;
+
+  SetupPassword({Key? key, this.extra}) : super(key: key);
 
   @override
   _SetupPasswordState createState() => _SetupPasswordState();
 }
 
 class _SetupPasswordState extends State<SetupPassword> {
+  bool get isForget => widget.extra?['isForget'] ?? false;
+
   Map<String, dynamic> passwordValidation = {
     'length': false,
     'uppercase': false,
@@ -100,6 +105,11 @@ class _SetupPasswordState extends State<SetupPassword> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          TextView(
+                            text: isForget
+                                ? "IsForget : true"
+                                : "isForget : false",
+                          ),
                           TextView(
                             text: AppLocalizations.of(
                               context,
@@ -208,9 +218,19 @@ class _SetupPasswordState extends State<SetupPassword> {
               ),
 
               Button(
-                onTap: () {
+                onTap: () async {
                   if (_formKey.currentState!.validate() && _allValid()) {
-                    GoRouter.of(context).push('/auth/danSignUp');
+                    if (isForget) {
+                      await CustomDialog.success(
+                        context,
+                        title: AppLocalizations.of(
+                          context,
+                        )!.resetPasswordSuccess,
+                        navigation: "/auth/signIn",
+                      );
+                    } else {
+                      GoRouter.of(context).push('/auth/danSignUp');
+                    }
                   }
                 },
                 text: AppLocalizations.of(context)!.buttonContinue,

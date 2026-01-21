@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter routes = GoRouter(
-  initialLocation: '/auth/reset-password',
+  initialLocation: '/auth/reset-password-email',
   routes: <RouteBase>[
     GoRoute(
       path: '/',

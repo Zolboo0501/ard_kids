@@ -455,4 +455,55 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get resetTitle => 'Login username, Reset password';
+
+  @override
+  String get resetPasswordOption => 'Choose your option for reset password';
+
+  @override
+  String get resetPasswordOptionError =>
+      'Please select option for reset password';
+
+  @override
+  String get resetPasswordEmail => 'Email';
+
+  @override
+  String get resetPasswordPhone => 'Phone';
+
+  @override
+  String get resetPasswordEmailTitle => 'Please enter your email';
+
+  @override
+  String get resetPasswordEmailDecription =>
+      'Please provide the email address registered with your account in order to initiate password recovery.';
+
+  @override
+  String get resetPasswordEmailLabel => 'Email';
+
+  @override
+  String get resetPasswordEmailHint => 'Please enter a email';
+
+  @override
+  String get resetPasswordEmailError => 'Please enter a valid email';
+
+  @override
+  String get resetPasswordPhoneTitle => 'Please enter your phone';
+
+  @override
+  String get resetPasswordPhoneDecription =>
+      'Please provide the phone number registered with your account in order to initiate password recovery.';
+
+  @override
+  String get resetPasswordPhoneLabel => 'Phone';
+
+  @override
+  String get resetPasswordPhoneHint => 'Please enter a phone number';
+
+  @override
+  String get resetPasswordPhoneError => 'Please enter a valid phone number';
+
+  @override
+  String get resetPasswordSuccess => 'Password reset successfully';
+
+  @override
+  String get buttonUnderstand => 'Understand';
 }

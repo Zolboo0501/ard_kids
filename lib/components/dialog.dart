@@ -1,5 +1,6 @@
 import 'package:ard_light/components/button.dart';
 import 'package:ard_light/components/text_view.dart';
+import 'package:ard_light/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
@@ -203,7 +204,9 @@ class CustomDialogState extends State<CustomDialog> {
                   onTap: () {
                     widget.onComplete?.call();
                   },
-                  text: widget.buttonTitle ?? "",
+                  text:
+                      widget.buttonTitle ??
+                      AppLocalizations.of(context)!.buttonUnderstand,
                   color: Theme.of(context).colorScheme.primary,
                   titleColor: Theme.of(context).colorScheme.onPrimary,
                 ),
