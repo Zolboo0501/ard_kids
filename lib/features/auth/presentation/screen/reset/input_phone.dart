@@ -78,7 +78,9 @@ class _ResetInputPhoneState extends State<ResetInputPhone> {
                   Button(
                     onTap: () {
                       if (formKey.currentState!.validate()) {
-                        GoRouter.of(context).push("/auth/reset-password");
+                        GoRouter.of(
+                          context,
+                        ).push("/auth/otp", extra: {'isForget': true});
                       }
                     },
                     text: AppLocalizations.of(context)!.validate,

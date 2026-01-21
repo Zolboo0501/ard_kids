@@ -616,6 +616,14 @@
   "@resetPasswordSuccess": {
     "description": "Success for reset password"
   },
+  "resetPasswordByPhone": "Утасны дугаар",
+  "@resetPasswordByPhone": {
+    "description": "Label for reset password option"
+  },
+  "resetPasswordByEmail": "Имэйл хаяг",
+  "@resetPasswordByEmail": {
+    "description": "Label for reset password option"
+  },
   "buttonUnderstand": "Ойлголоо",
   "@buttonUnderstand": {
     "description": "Understand button"

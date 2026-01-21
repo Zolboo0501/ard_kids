@@ -11,13 +11,15 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class Otp extends StatefulWidget {
-  Otp({Key? key}) : super(key: key);
+  final Map<String, dynamic>? extra;
+  const Otp({Key? key, this.extra}) : super(key: key);
 
   @override
   _OtpState createState() => _OtpState();
 }
 
 class _OtpState extends State<Otp> {
+  bool get isForget => widget.extra?['isForget'] ?? false;
   String otpValue = "";
   bool isTimeStopped = false;
   int time = 120;
@@ -82,6 +84,7 @@ class _OtpState extends State<Otp> {
           ),
           child: Column(
             children: [
+              TextView(text: isForget ? "isForget True" : "isForget False"),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
@@ -145,7 +148,13 @@ class _OtpState extends State<Otp> {
               Button(
                 onTap: () {
                   if (_formKey.currentState!.validate()) {
-                    GoRouter.of(context).push('/auth/setup-password');
+                    if (isForget) {
+                      GoRouter.of(
+                        context,
+                      ).push('/auth/reset-password', extra: {'isForget': true});
+                    } else {
+                      GoRouter.of(context).push('/auth/setup-password');
+                    }
                   }
                 },
                 text: AppLocalizations.of(context)!.validate,

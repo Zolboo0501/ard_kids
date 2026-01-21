@@ -612,6 +612,14 @@
   "@resetPasswordSuccess": {
     "description": "Success for reset password"
   },
+  "resetPasswordByPhone": "Phone",
+  "@resetPasswordByPhone": {
+    "description": "Label for reset password option"
+  },
+  "resetPasswordByEmail": "Email",
+  "@resetPasswordByEmail": {
+    "description": "Label for reset password option"
+  },
   "buttonUnderstand": "Understand",
   "@buttonUnderstand": {
     "description": "Understand button"

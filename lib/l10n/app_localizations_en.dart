@@ -505,5 +505,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get resetPasswordSuccess => 'Password reset successfully';
 
   @override
+  String get resetPasswordByPhone => 'Phone';
+
+  @override
+  String get resetPasswordByEmail => 'Email';
+
+  @override
   String get buttonUnderstand => 'Understand';
 }

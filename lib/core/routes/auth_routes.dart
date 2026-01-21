@@ -48,7 +48,11 @@ class AuthRoutes {
         builder: (context, state) => SetupPassword(),
       ),
 
-      GoRoute(path: '/otp', builder: (context, state) => Otp()),
+      GoRoute(
+        path: '/otp',
+        builder: (context, state) =>
+            Otp(extra: state.extra as Map<String, dynamic>?),
+      ),
       GoRoute(
         path: '/invitation-code',
         builder: (context, state) => InvitationCode(),

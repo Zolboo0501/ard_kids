@@ -500,5 +500,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get resetPasswordSuccess => 'Нууц үг амжилттай солигдлоо.';
 
   @override
+  String get resetPasswordByPhone => 'Утасны дугаар';
+
+  @override
+  String get resetPasswordByEmail => 'Имэйл хаяг';
+
+  @override
   String get buttonUnderstand => 'Ойлголоо';
 }

@@ -998,6 +998,18 @@ abstract class AppLocalizations {
   /// **'Password reset successfully'**
   String get resetPasswordSuccess;
 
+  /// Label for reset password option
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get resetPasswordByPhone;
+
+  /// Label for reset password option
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get resetPasswordByEmail;
+
   /// Understand button
   ///
   /// In en, this message translates to:

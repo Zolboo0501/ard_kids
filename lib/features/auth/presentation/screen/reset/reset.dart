@@ -49,6 +49,7 @@ class Reset extends StatelessWidget {
           right: 15,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: EdgeInsets.only(

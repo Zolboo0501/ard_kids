@@ -1,4 +1,3 @@
-import 'package:ard_light/components/button.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ard_light/components/custom_header.dart';
@@ -6,6 +5,7 @@ import 'package:ard_light/components/language_change.dart';
 import 'package:ard_light/components/text_view.dart';
 import 'package:ard_light/features/auth/presentation/widget/question.dart';
 import 'package:ard_light/l10n/app_localizations.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
 class ResetPasswordOption extends StatefulWidget {
@@ -28,17 +28,6 @@ class _ResetPasswordOptionState extends State<ResetPasswordOption> {
 
   @override
   Widget build(BuildContext context) {
-    List<dynamic> options = [
-      {
-        "label": AppLocalizations.of(context)!.resetPasswordEmail,
-        "type": "email",
-      },
-      {
-        "label": AppLocalizations.of(context)!.resetPasswordPhone,
-        "type": "phone",
-      },
-    ];
-
     return Scaffold(
       appBar: CustomHeader(
         isBack: true,
@@ -70,53 +59,104 @@ class _ResetPasswordOptionState extends State<ResetPasswordOption> {
                     ),
                   ),
                   const SizedBox(height: 25),
-                  RadioGroup<String>(
-                    groupValue: selectedType,
-                    onChanged: (value) {
-                      setState(() {
-                        selectedType = value;
-                      });
-                    },
-                    child: Column(
-                      children: [
-                        for (int i = 0; i < options.length; i++)
-                          ListTile(
-                            contentPadding: const EdgeInsets.all(0),
-                            leading: Radio<String>(value: options[i]['type']),
-                            title: TextView(
-                              text: options[i]['label'],
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                            onTap: () {
-                              onChangeRadio(options[i]);
-                            },
-                          ),
 
-                        if (showError)
-                          TextView(
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondary,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: ListTile(
+                          onTap: () {
+                            GoRouter.of(
+                              context,
+                            ).push("/auth/reset-password-phone");
+                          },
+                          contentPadding: const EdgeInsets.all(0),
+                          trailing: Icon(
+                            Icons.chevron_right,
+                            color: Theme.of(context).colorScheme.primary,
+                            size: 24,
+                          ),
+                          leading: Container(
+                            width: 48,
+                            height: 48,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                width: 1,
+                                color: Theme.of(context).colorScheme.onPrimary,
+                              ),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Center(
+                              child: SvgPicture.asset(
+                                'assets/icons/phone.svg',
+                                width: 24,
+                                height: 24,
+                              ),
+                            ),
+                          ),
+                          title: TextView(
                             text: AppLocalizations.of(
                               context,
-                            )!.resetPasswordOptionError,
-                            color: Theme.of(context).colorScheme.error,
+                            )!.resetPasswordByPhone,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
                           ),
-                      ],
-                    ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondary,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: ListTile(
+                          onTap: () {
+                            GoRouter.of(
+                              context,
+                            ).push("/auth/reset-password-email");
+                          },
+                          contentPadding: const EdgeInsets.all(0),
+                          trailing: Icon(
+                            Icons.chevron_right,
+                            color: Theme.of(context).colorScheme.primary,
+                            size: 24,
+                          ),
+                          leading: Container(
+                            width: 48,
+                            height: 48,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                width: 1,
+                                color: Theme.of(context).colorScheme.onPrimary,
+                              ),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Center(
+                              child: SvgPicture.asset(
+                                'assets/icons/envelope.svg',
+                                width: 24,
+                                height: 24,
+                              ),
+                            ),
+                          ),
+                          title: TextView(
+                            text: AppLocalizations.of(
+                              context,
+                            )!.resetPasswordByEmail,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ),
-            Button(
-              onTap: () {
-                if (selectedType == null || selectedType!.isEmpty) {
-                  setState(() {
-                    showError = true;
-                  });
-                } else {
-                  GoRouter.of(context).push("");
-                }
-              },
-              text: AppLocalizations.of(context)!.buttonContinue,
             ),
           ],
         ),
